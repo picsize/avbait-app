@@ -1,0 +1,31 @@
+﻿<div id="price">
+    <div class="modal-header">
+        <h2 class="modal-title text-center center-block">המחיר בדרך אליכם...</h2>
+        <div class="display-price">
+            <h3 class="color-blue text-center">{{data.name}}</h3>
+            <h3 class="color-blue text-center">{{data.price | currency:'₪':0}}</h3>
+        </div>
+    </div>
+    <div class="modal-body">
+        <div class="col-xs-10 center-block">
+
+
+            <ul>
+                <li>100% אחריות על העבודה</li>
+                <li>3 תשלומים באשראי ללא ריבית</li>
+                <li>בעל מקצוע עם ותק וניסיון</li>
+                <li>יש כתובת לכל בעיה ותלונה</li>
+                <li>ניקיון אחרי תיקון התקלה</li>
+            </ul>
+
+
+        </div>
+    </div>
+    <div class="modal-footer">
+        <p class="text-center"><a ng-click="close()" ui-sref="website.order({type:120, sub:data.decode})" class="btn orderBtn" role="button">הזמנה</a></p>
+
+    </div>
+
+</div>
+
+

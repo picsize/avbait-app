@@ -1,0 +1,53 @@
+﻿#services
+{
+    background: #fff url('/content/images/services.png') no-repeat;
+    height: 55rem;
+    background-size: 100% 100%;
+}
+
+
+    #services h2
+    {
+        margin-top: 5rem;
+    }
+
+    #services img
+    {
+        width: 100%;
+        position: relative;
+        right: 10rem;
+        top: 5rem;
+    }
+
+
+
+    #services .business, #services .home, #services .department, #services .manageDepartment, #services .reovation
+    {
+        background-size: 100% !important;
+        height: 40rem;
+        margin-left: 5rem;
+        margin-top: 4rem;
+    }
+
+
+        #services .business h2, #services .home h2, #services .department h2, #services .manageDepartment h2, #services .reovation h2
+        {
+            margin-top: 2rem;
+            margin-right: 6rem;
+        }
+
+        #services .business span, #services .home span, #services .department span, #services .manageDepartment span, #services .reovation span
+        {
+            color: #f37321;
+        }
+
+
+
+ 
+
+
+.service p
+{
+    padding: 2rem 4rem 0 0;
+    line-height:30px;
+}

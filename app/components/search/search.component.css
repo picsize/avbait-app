@@ -1,0 +1,42 @@
+﻿
+#search_value {
+    background: url('/content/images/searchInput.png') no-repeat;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    width: 65%;
+    background-position: 50%;
+    background-size: 100%;
+    height: 8rem;
+    margin: 0 auto;
+}
+
+.li-search {
+    display: block !important;
+}
+
+    .li-search:before {
+        content: '';
+    }
+
+.angucomplete-dropdown {
+    width: 63%;
+    margin: -1.5rem auto;
+    /* border: 1px solid #888; */
+    box-shadow: 0 0 8px #888;
+    max-height: 15rem;
+    overflow-y: auto;
+    border-radius: 0.5rem;
+}
+
+.angucomplete-row {
+    font-size: 1.8rem;
+    padding: 3% 0;
+    border-bottom: 1px solid #dad8d8;
+}
+
+    .angucomplete-row:hover {
+        cursor: pointer;
+        background-color: #2d4e6f;
+        color: #fff;
+    }

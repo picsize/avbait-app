@@ -1,0 +1,40 @@
+﻿
+
+.page-banner h1
+{
+    font-size: 5rem;
+    margin-top: 3rem;
+}
+
+.page-banner h2
+{
+    margin-bottom: 5rem;
+}
+
+.page-banner .features
+{
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+    .page-banner .features li
+    {
+        display: inline-block;
+        padding: 1rem 6rem;
+    }
+
+        .page-banner .features li p
+        {
+            color: #fff;
+        }
+
+        .page-banner .features li:not(:last-child)
+        {
+            border-left: 1px solid #4F738E;
+            height: 9rem;
+        }
+
+        .page-banner .features li img
+        {
+            margin-bottom: 3rem;
+        }

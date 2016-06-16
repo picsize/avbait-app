@@ -1,0 +1,58 @@
+﻿    #articles h3
+    {
+        color: #ff7f01;
+    }
+
+    #articles .big, #articles .small
+    {
+        background-color: #fff;
+        height: 20rem;
+        margin-bottom: 5rem;
+    }
+
+        #articles .big h3, #articles .big p
+        {
+            white-space: nowrap;
+            width: 62rem;
+            overflow: hidden;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+        }
+
+        #articles .small h3, #articles .small p
+        {
+            white-space: nowrap;
+            width: 34rem;
+            overflow: hidden;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            position: relative;
+        }
+
+
+        #articles .small p, #articles .big p
+        {
+            height: 13rem;
+        }
+
+.articleBox
+{
+    -moz-border-radius: 8px / 10px;
+    -webkit-border-radius: 8px / 10px;
+    border-radius: 8px / 10px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid #2b9ac7;
+    color: #2b9ac7;
+    outline: none;
+    box-shadow: none;
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width:23%;
+    height:37rem;
+}

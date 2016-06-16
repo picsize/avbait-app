@@ -1,0 +1,225 @@
+﻿
+body
+{
+    overflow-x: hidden;
+}
+
+a:hover
+{
+    cursor: pointer;
+}
+
+.main-holder
+{
+    position: relative;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.big-banner
+{
+    background-image: url('/content/images/MainHederImg.png');
+}
+
+.small-banner
+{
+    background-image: url('/content/images/smalltal.jpg');
+}
+
+.modal-content
+{
+    margin-top: 13rem;
+}
+
+.float-left
+{
+    float: left;
+}
+
+.float-right
+{
+    float: right;
+}
+
+.container-80
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.color-light-gray
+{
+    color: #c2c8cf;
+}
+
+.color-gray
+{
+    color: #132c45;
+}
+
+.color-white
+{
+    color: #fff;
+}
+
+.color-blue
+{
+    color: #1f3953;
+}
+
+.color-light-blue
+{
+    color: #9DAAC7;
+}
+
+.color-orange
+{
+    color: #f37321;
+}
+
+.center-block
+{
+    float: none;
+}
+
+p
+{
+    font-size: 1.5rem;
+}
+
+section:not(.no-bg)
+{
+    background-color: #fff;
+}
+
+.no-left-padding
+{
+    padding-left: 0;
+}
+
+.no-right-padding
+{
+    padding-right: 0;
+}
+
+h1
+{
+    font-size: 25px;
+}
+
+h2
+{
+    font-size: 20px;
+}
+
+h3
+{
+    font-size: 18px;
+}
+
+p
+{
+    font-size: 14px;
+}
+
+
+.form-control
+{
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -moz-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    border-radius: 0;
+}
+
+    .form-control:focus
+    {
+        border-color: transparent;
+        outline: 0;
+        box-shadow: none;
+        border-bottom: 1px solid #bdbdbd;
+    }
+
+
+.ellip
+{
+    display: block;
+    height: 100%;
+}
+
+.ellip-line
+{
+    display: inline-block;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -ms-word-wrap: normal;
+    word-wrap: normal;
+    max-width: 100%;
+}
+
+.ellip,
+.ellip-line
+{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15
+{
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15
+{
+    width: 20%;
+    float: right;
+}
+
+@media (min-width: 768px)
+{
+    .col-sm-15
+    {
+        width: 20%;
+        float: right;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .col-md-15
+    {
+        width: 20%;
+        float: right;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .col-lg-15
+    {
+        width: 20%;
+        float: right;
+    }
+}

@@ -1,0 +1,16 @@
+﻿
+#articles
+{
+    background: #fff url('/content/images/solutionBG.png') no-repeat;
+    border-bottom: 1px solid #2b9ac7;
+    height: 62rem;
+    background-size: cover;
+}
+
+    #articles h2
+    {
+        font-size: 6rem;
+        margin-bottom: 7rem;
+    }
+
+

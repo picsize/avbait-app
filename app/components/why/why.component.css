@@ -1,0 +1,29 @@
+﻿#why
+{
+    background-image: url('/content/images/why.jpg');
+    background-repeat: no-repeat;
+    background-position: 6% 96%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-size:cover;
+    background-attachment:fixed;
+    border-bottom: 1px solid #2b9ac7;
+}
+
+    #why h2
+    {
+        font-size:60px;
+    }
+
+    #why .check
+    {
+        position: relative;
+        top: 2rem;
+        left: 2rem;
+    }
+
+
+.reasons
+{
+    margin-top: 18rem;
+}

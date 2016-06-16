@@ -1,0 +1,14 @@
+﻿@import url('application/application.component.css');
+@import url('articleBox/articleBox.component.css');
+@import url('articles/articles.component.css');
+@import url('bigBanner/bigBanner.component.css');
+@import url('contactUs/contactUs.component.css');
+@import url('menu/menu.component.css');
+@import url('pagePart/pagePart.component.css');
+@import url('problemAndSolution/problemAndSolution.component.css');
+@import url('search/search.component.css');
+@import url('services/services.component.css');
+@import url('smallBanner/smallBanner.component.css');
+@import url('steps/steps.component.css');
+@import url('why/why.component.css');
+@import url('order/order.component.css');

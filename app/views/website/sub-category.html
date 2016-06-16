@@ -1,0 +1,91 @@
+﻿
+
+<small-banner></small-banner>
+
+
+<section class="row" id="sub-category">
+    <div class="container">
+        <div class="row title">
+            <div class="col-xs-3 col-lg-3 col-md-3 col-sm-3">
+                <h1 class="font-bold color-blue">{{models.selectedCategory}}</h1>
+            </div>
+            <div class="col-xs-4 col-lg-4 col-md-4 col-sm-4 text-center">
+                <h2 class="font-bold text-right color-light-gray sub-title">מה התקלה</h2>
+            </div>
+
+        </div>
+
+        <div class="row center-block text-center problem-types">
+            <div class="col-xs-12 col-lg-15 col-sm-15 col-md-15 text-container"
+                 ng-repeat="category in models.subCategoriesByTitle track by $index">
+                <h3>{{category.Title}}</h3>
+                <div class="text-right text-content short-text short-text">
+                    <a ng-click="openPopup(sub.Name,sub.Price, sub.Id)" ng-repeat="sub in models.subCategoriesByTitle[$index].SubCategory">{{sub.Name}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<articles></articles>
+<application></application>
+
+
+
+
+
+
+    <script>
+        $(".show-more a").each(function () {
+            var $link = $(this);
+            var $content = $link.parent().prev("div.text-content");
+
+            //console.log($link);
+
+            var visibleHeight = $content[0].clientHeight;
+            var actualHide = $content[0].scrollHeight - 1;
+
+            console.log(actualHide);
+            console.log(visibleHeight);
+
+            if (actualHide > visibleHeight) {
+                $link.show();
+            } else {
+                $link.hide();
+            }
+        });
+
+        $(".show-more a").on("click", function () {
+            var $link = $(this);
+            var $content = $link.parent().prev("div.text-content");
+            var linkText = $link.text();
+
+            $content.toggleClass("short-text, full-text");
+
+            $link.text(getShowLinkText(linkText));
+
+            return false;
+        });
+
+        function getShowLinkText(currentText) {
+            var newText = '';
+
+            if (currentText.toUpperCase() === "הצג פחות") {
+                newText = "הצג עוד";
+            } else {
+                newText = "הצג פחות";
+            }
+
+            return newText;
+        }
+
+        $(document).on('click', '[data-target="#popup"]', function () {
+            $('.display-price h3:last-child').text($(this).attr('data-price'));
+            $('.display-price h3:first-child').text($(this).text());
+        });
+
+    </script>
+
+
+

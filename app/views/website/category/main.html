@@ -1,0 +1,23 @@
+﻿
+<search></search>
+
+<div class="row">
+    <div class="col-xs-12 col-lg-12 col-md-12 col-md-12 center-block text-center">
+        <ul class="text-center category-list">
+            <li ng-repeat="category in models.categories track by $index">
+                <a ui-sref="website.category.sub({categoryName:category.Name})" ng-click="setCategoryCookie(category)">{{category.Name}}</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div ng-repeat="category in models.categories track by $index" class="col-xs-6 col-lg-4 col-md-4 col-md-4 box-cat" style="background-image:url('/content/images/category/{{category.Img}}')">
+        <h3 class="font-bold"><a class="color-blue" ui-sref="website.category.sub({categoryName:category.Name})" >{{category.Name}}</a></h3> <!--ng-click="setCategoryCookie(category)"-->
+        <ul>
+            <li ng-repeat="sub in category.SubCategory">
+                <a ui-sref="website.category.order({categoryName:category.Name,subCategoryName:sub.Name})">{{sub.Name}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

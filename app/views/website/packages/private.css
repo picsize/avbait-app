@@ -1,0 +1,215 @@
+﻿#privateHome
+{
+    /*background-image: url('/content/images/privateHomeIcon.png');
+    background-repeat: no-repeat;
+    background-position: 74% 6%;
+    background-size: 12%;
+    padding-bottom: 8rem;*/
+}
+
+
+.privateHomeTitle
+{
+    font-size: 55px;
+}
+
+
+    .privateHomeTitle > span:last-child
+    {
+        margin-right: 25rem;
+    }
+
+.bigtext
+{
+    font-size: 90px;
+}
+
+.chooseroute
+{
+    font-size: 75px;
+}
+
+.regular .container-80
+{
+    background: url('/content/images/regularpro.png') no-repeat;
+    background-size: 100%;
+    height: 13rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.gold .container-80
+{
+    background: url('/content/images/goldpro.png') no-repeat;
+    background-size: 100%;
+    height: 13rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.vip .container-80
+{
+    background: url('/content/images/vippro.png') no-repeat;
+    background-size: 100%;
+    height: 13rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.private-home-services
+{
+    margin-top: 1rem;
+}
+
+
+    .private-home-services h3:after
+    {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 6rem;
+        height: 5rem;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .private-home-services:nth-of-type(1) h3:after
+    {
+        background-image: url('/content/images/private-home/caricon.png');
+        right: 6rem;
+        margin-top: -1rem;
+    }
+
+    .private-home-services:nth-of-type(2) h3:after
+    {
+        background-image: url('/content/images/private-home/fixicon.png');
+        height: 7rem;
+        margin-top: -2.5rem;
+        left: 4rem;
+    }
+
+    .private-home-services:nth-of-type(3) h3:after
+    {
+        background-image: url('../../images/private-home/joyicon.png');
+        height: 6.5rem;
+        margin-top: -2.5rem;
+    }
+
+    .private-home-services:nth-of-type(4) h3:after
+    {
+        background-image: url('/content/images/private-home/animalicon.png');
+        margin-top: -1rem;
+    }
+
+    .private-home-services:nth-of-type(5) h3:after
+    {
+        background-image: url('/content/images/private-home/deliveryicon.png');
+        margin-top: -1.6rem;
+        right: 11rem;
+    }
+
+    .private-home-services h3
+    {
+        display: inline-block;
+        font-size: 2.6rem;
+    }
+
+.private-home p
+{
+    padding-top: 5rem;
+    padding-right: 0.5rem;
+}
+
+.private-home-icon
+{
+    width:58%;
+    margin-bottom:5rem;
+}
+
+.private-home-services ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .private-home-services ul li
+    {
+        color: #9DAAC7;
+        font-size: 1.4rem;
+        padding: 0.7rem 0;
+    }
+
+        /*.private-home-services ul li:last-child
+        {
+            color: #808080;
+        }*/
+
+.private-home-services img:nth-of-type(1)
+{
+    width: 70%;
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.private-home-services-holder hr
+{
+    width: 40%;
+    border-top: 3px solid #eee;
+    position: relative;
+    top: 11rem;
+    left: 30rem;
+}
+
+.list-service
+{
+    font-size: 15px;
+    margin-top: 2rem;
+    line-height: 22px;
+}
+
+#regular .modal-content, #gold .modal-content, #vip .modal-content
+{
+    margin-top: 15rem;
+}
+
+#regular .modal-body, #gold .modal-body, #vip .modal-body
+{
+    padding: 0;
+    height: 31rem;
+}
+
+#regular .modal-header h2, #gold .modal-header h2, #vip .modal-header h2
+{
+    color:#1B364D;
+}
+
+#regular .modal-header h2 span
+{
+    color:#A5B1CB;
+}
+
+    #gold .modal-header h2 span
+    {
+        color:#AEA85F;
+    }
+
+    #vip .modal-header h2 span
+    {
+         color:#9EAAB5;
+    }
+
+
+.show-regular, .show-gold, .show-vip
+{
+    margin-top:5rem;
+}
+
+.show-regular h3, .show-gold h3, .show-vip h3
+{
+    font-size:2rem;
+
+}

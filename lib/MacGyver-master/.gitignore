@@ -1,0 +1,20 @@
+# Node packages
+node_modules
+
+# Bower vendor files
+bower_components
+
+# Build files
+build/
+.gitmodules
+.grunt/
+coverage/
+out/
+lib/
+
+# Logs
+npm-debug.log
+
+# System file types
+.DS_Store
+.c9

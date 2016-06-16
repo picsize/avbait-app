@@ -1,0 +1,23 @@
+﻿#application
+{
+    background-image: url('/content/images/appBG.png');
+    background-repeat: no-repeat;
+    height: 60rem;
+    background-size: 76% 101%;
+    background-position: 0;
+}
+
+    #application img
+    {
+        position: relative;
+        top: 9rem;
+        right: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    #application h2
+    {
+        margin-top: 13rem;
+        margin-right: 14rem;
+        font-size: 22px;
+    }

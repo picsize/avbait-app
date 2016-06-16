@@ -1,0 +1,49 @@
+﻿
+
+.business-office-list
+{
+    list-style: none;
+    margin-top: 12rem;
+}
+
+    .business-office-list li
+    {
+        line-height: 5rem;
+    }
+
+        .business-office-list li:before
+        {
+            content: '';
+            display: inline-block;
+            height: 2.5rem;
+            width: 4rem;
+            background-image: url('/content/images/check.png');
+            background-repeat: no-repeat;
+            position: relative;
+            right: -2rem;
+            top: 0.5rem;
+        }
+
+
+#business-contact
+{
+    margin-top: 15rem;
+    margin-bottom: 7.4rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.32);
+    height: 35rem;
+}
+
+
+    #business-contact img
+    {
+        position: absolute;
+        top: -4rem;
+        width: 43.7rem;
+        left: -28rem;
+    }
+
+    #business-contact h2
+    {
+        margin-right: 2rem;
+    }

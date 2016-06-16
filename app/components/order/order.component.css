@@ -1,0 +1,120 @@
+﻿#order {
+    background-image: url('/content/images/orderclock.png');
+    background-repeat: no-repeat;
+    background-position: 96.5% 3%;
+    background-size: 3.5%;
+}
+
+    #order h2 {
+        font-size: 6rem;
+        margin-right: 9rem;
+    }
+
+    #order small {
+        font-size: 1.7rem;
+        font-weight: normal;
+        margin-right: 1rem;
+    }
+
+    #order span {
+        color: #f8f8f8;
+        text-shadow: 3px 4px 5px rgba(0,0,0,.38);
+        font-size: 6rem;
+        font-family: OpenSansHebrew-Bold;
+    }
+
+    #order label {
+        font-weight: normal;
+        font-size: 1.5rem;
+    }
+
+
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-label {
+    background-image: url('/content/images/checkbox.png');
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 3rem;
+    padding: 0.5rem;
+    text-indent: 2rem;
+}
+
+.checkbox-input:checked + .checkbox-label {
+    background-position: 100% 102%;
+}
+
+#order .form-group small {
+    font-size: 1.4rem;
+}
+
+.expired label {
+    display: block;
+}
+
+.expired input {
+    width: 20%;
+    display: inline-block;
+}
+
+    .expired input:nth-child(2n+1) {
+        margin-right: 3rem;
+    }
+
+
+.confirmOrder {
+    width: 30rem;
+    margin-top: 5rem;
+}
+
+#order .cvv {
+    padding: 0;
+}
+
+#order select {
+    border-radius: 0;
+    padding: 0;
+    height: 4.2rem;
+    text-indent: 1rem;
+}
+
+.placeholder-label label {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 1.5rem !important;
+    -moz-transition: all ease-in 0.2s;
+    -o-transition: all ease-in 0.2s;
+    -webkit-transition: all ease-in 0.2s;
+    transition: all ease-in 0.2s;
+}
+
+.placeholder-label input {
+    margin-top: 0;
+    -moz-transition: all ease-in 0.2s;
+    -o-transition: all ease-in 0.2s;
+    -webkit-transition: all ease-in 0.2s;
+    transition: all ease-in 0.2s;
+}
+
+.placeholder-label input:focus + label {
+    top: -1rem;
+    right: 1rem;
+    color: #254460;
+    font-size:1.3rem !important;
+    -moz-transition: all ease-in 0.2s;
+    -o-transition: all ease-in 0.2s;
+    -webkit-transition: all ease-in 0.2s;
+    transition: all ease-in 0.2s;
+}
+
+.placeholder-label input:focus {
+    margin-top: 1rem;
+    -moz-transition: all ease-in 0.2s;
+    -o-transition: all ease-in 0.2s;
+    -webkit-transition: all ease-in 0.2s;
+    transition: all ease-in 0.2s;
+    color:#254460;
+}

@@ -1,0 +1,70 @@
+﻿#steps
+{
+    /*background-image:url('/content/images/steps1.jpg');*/
+    background-color:#fff;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+
+.numbers
+{
+    list-style: none;
+        margin-top: 6rem;
+}
+
+    .numbers li, .images-scene img {
+        position:relative;
+    }
+
+    .numbers p
+    {
+        color:#000;
+    }
+
+    .numbers span
+    {
+        color: #ff6a00;
+        font-size: 6rem;
+        font-family: OpenSansHebrew-Bold;
+    }
+
+#steps img
+{
+    width: 53rem;
+    position: absolute;
+    bottom: -90rem;
+    display:none;
+}
+
+#steps h2
+{
+    margin-top:10rem;
+    font-size:60px;
+}
+
+
+#steps-mobile {
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

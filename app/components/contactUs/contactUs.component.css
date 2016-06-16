@@ -1,0 +1,39 @@
+﻿
+#contact form {
+    background: url('/content/images/contactBG.png') no-repeat;
+    padding: 10rem 3rem 0 3rem;
+    height: 50rem;
+    background-size: contain;
+    position: relative;
+    top: 7rem;
+}
+
+#contact h2 {
+    margin-right: 3rem;
+}
+
+#contactus input:not([type="submit"]), textarea {
+    outline: none;
+    border-radius: 0 !important;
+    padding: 2rem;
+}
+
+#contactus input[type=submit] {
+    background: #f66d3b;
+    border: none;
+}
+
+#map-canvas {
+    height: 64rem;
+    width: 100%;
+}
+
+#contact {
+    position: absolute;
+    bottom: 15rem;
+    left: 14rem;
+}
+
+.form-group {
+    padding: 1rem;
+}

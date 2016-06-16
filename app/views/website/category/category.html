@@ -1,0 +1,49 @@
+﻿<link href="/app/views/website/category/category.css" rel="stylesheet" />
+
+<small-banner></small-banner>
+
+<section class="row category" id="choose-category">
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                <h2 class="font-bold text-center color-light-gray">בחר בעל מקצוע</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-lg-6 col-md-6 col-md-6 center-block">
+                 <ul id="progressbarfirst">
+                    <li ng-class="{'active':steps.firstStep}">מה התקלה או השירות</li>
+                    <li ng-class="{'active':steps.secondStep}">קבל מחיר</li>
+                    <li ng-class="{'active':steps.lastStep}">ביצוע הזמנה</li>
+                </ul>
+            </div>
+        </div>
+
+        <ui-view class="slide"></ui-view>
+
+    </div>
+
+
+</section>
+
+
+<articles></articles>
+
+<application></application>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

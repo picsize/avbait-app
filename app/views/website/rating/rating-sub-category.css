@@ -1,0 +1,291 @@
+﻿.rating-sub-category .results
+{
+    padding-left:0;
+    padding-right:5rem;
+}
+
+
+
+
+   .rating-sub-category
+{
+    background-image: url('/content/images/sub-category/plumbers.png');
+    background-repeat: no-repeat;
+    background-position: 68% 3%;
+    background-size: 3%;
+    padding-bottom: 8rem;
+}
+
+    .rating-sub-category .sub-title
+    {
+        font-size: 6rem;
+        padding: 0;
+        margin-right: 3rem;
+    }
+
+    .rating-sub-category h1
+    {
+        font-size: 3.7rem;
+        position: relative;
+        top: 3rem;
+    }
+
+   .rating-sub-category .title
+    {
+        margin-bottom: 5rem;
+    }
+
+
+    .rating-sub-category .category-list
+    {
+        list-style: none;
+        margin-top: 3rem;
+    }
+
+        .rating-sub-category .category-list li
+        {
+            display: inline-block;
+        }
+
+
+            .rating-sub-category .category-list li a
+            {
+                display: inline-block;
+                font-size: 1.7rem;
+            }
+
+
+            .rating-sub-category .category-list li:not(:last-child):after
+            {
+                content: "|";
+            }
+
+
+    .rating-sub-category ul
+    {
+        list-style: none;
+        margin-top: 3rem;
+        padding: 0;
+    }
+
+        .rating-sub-category ul li
+        {
+            border-bottom: 1px solid #F5F5F5;
+            padding: 1rem;
+        }
+
+
+            .rating-sub-category ul li a
+            {
+                font-size: 1.5rem;
+                line-height: 30px;
+            }
+
+.problem-types
+{
+
+    direction:rtl;
+}
+
+.problem-types h3
+{
+ 
+    padding: 1rem;
+    color: #fff;
+}
+
+.problem-types div[class*="col-"]:nth-child(1) h3
+{
+       background-color: #2C4B6A;
+}
+
+.problem-types div[class*="col-"]:nth-child(2) h3
+{
+       background-color: #376698;
+}
+
+.problem-types div[class*="col-"]:nth-child(3) h3
+{
+       background-color: #6295CC;
+}
+
+.problem-types div[class*="col-"]:nth-child(4) h3
+{
+       background-color: #76A8CD;
+}
+
+.problem-types div[class*="col-"]:nth-child(5) h3
+{
+       background-color: #AAC2D4;
+}
+
+
+
+
+#price
+{
+    /*display:none;*/
+}
+
+.side-bar
+{
+    -moz-border-radius: 8px / 10px;
+    -webkit-border-radius: 8px / 10px;
+    border-radius: 8px / 10px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid #2b9ac7;
+    color: #2b9ac7;
+    outline: none;
+    box-shadow: none;
+}
+
+
+    .side-bar h3
+    {
+        color: #2b9ac7;
+        font-family: OpenSansHebrew-Bold;
+    }
+
+
+    .side-bar ul
+    {
+        list-style: circle !important;
+    }
+
+
+        .side-bar ul li
+        {
+                line-height: 20px;
+            text-indent: 1rem;
+        }
+
+
+            .side-bar ul li:hover, .side-bar ul li.active 
+            {
+                background-color: #2b9ac7;
+                color: #fff;
+            }
+
+
+
+    .side-bar i.search
+    {
+        position: absolute;
+        left: 5rem;
+        top: 34.7rem;
+    }
+
+
+.thumbnail
+{
+    opacity: .99;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #fff;
+    -moz-box-shadow: 1px 2px 7px rgba(8,9,9,.11);
+    -webkit-box-shadow: 1px 2px 7px rgba(8,9,9,.11);
+    box-shadow: 1px 2px 7px rgba(8,9,9,.11);
+}
+
+    .thumbnail img
+    {
+        width: 100%;
+    }
+
+
+
+
+    .thumbnail .rating
+    {
+        -moz-border-radius: 5px / 4px;
+        -webkit-border-radius: 5px / 4px;
+        border-radius: 5px / 4px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        background-color: #3db5c1;
+        -moz-box-shadow: 2px 3px 10px rgba(8,9,9,.21);
+        -webkit-box-shadow: 2px 3px 10px rgba(8,9,9,.21);
+        box-shadow: 2px 3px 10px rgba(8,9,9,.21);
+        width: 70%;
+        position: relative;
+        top: -3rem;
+        right: 3.7rem;
+        color: #fff;
+        padding: 1rem;
+    }
+
+
+
+
+        .thumbnail .rating span
+        {
+            font-size: 16px;
+            margin-right: 3.5rem;
+        }
+
+        .thumbnail .rating i
+        {
+            margin-top: -0.3rem;
+            border-right: 1px solid #fff;
+            padding-right: 1rem;
+        }
+
+
+    .thumbnail h3
+    {
+        color: #6b6b6b;
+        margin: -1rem 0 1rem 0;
+    }
+
+
+    .thumbnail h4
+    {
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+
+    .thumbnail p
+    {
+        color: #bbbbbb;
+    }
+
+    .thumbnail .page-header
+    {
+        margin: 0;
+    }
+
+    .thumbnail .aboutText
+    {
+        clear: both;
+        display: block;
+        border-top: 1px solid rgba(8,9,9,.11);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        height: 8rem;
+    }
+
+.averge
+{
+    font-size: 27px;
+    margin-top: 3rem;
+    line-height: 5rem;
+    color: #2B9AC7;
+    margin: 0;
+    height: 10rem;
+    border: 1px solid #2b9ac7;
+    border-top: none;
+}
+
+.results h2
+{
+    margin: 0;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,911 @@
+﻿
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle {
+    background-color: #333;
+}
+
+.affix .navbar-inverse .navbar-toggle, .affix .navbar-inverse .navbar-toggle {
+    box-shadow: 0 0 8px #fff;
+}
+
+
+@media only screen and (max-width:320px) {
+
+    .main-holder {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+
+    .logo {
+        width: 12rem !important;
+        display: inline-block !important;
+        float: right;
+    }
+
+    .affix .logo {
+        display: none !important;
+    }
+
+    .sub-menu-holder {
+        display: none;
+    }
+
+    .affix {
+        background-color: #333 !important;
+        height: 5.5rem !important;
+        box-shadow: none !important;
+    }
+
+    .main-img {
+        height: 85rem !important;
+    }
+
+        .main-img h1 {
+            font-size: 5.7rem !important;
+            margin-top: -3rem !important;
+        }
+
+    .buttons {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+
+        .buttons li {
+            height: 24.2rem !important;
+            width: 100% !important;
+            display: block !important;
+        }
+
+            .buttons li a {
+                top: 13rem !important;
+            }
+
+    #problem-solution {
+        height: auto !important;
+    }
+
+    .problem h2 {
+        font-size: 8rem !important;
+    }
+
+    #solution {
+        height: auto !important;
+        background-size: cover !important;
+    }
+
+    .solution:after {
+        font-size: 7rem !important;
+        color: #000 !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        top: -90rem !important;
+    }
+
+    #trigger-start, #steps {
+        display: none !important;
+    }
+
+    #steps-mobile {
+        display: block !important;
+    }
+
+    #why {
+        background: #f8f8f8 !important;
+    }
+
+    #services {
+        height: auto !important;
+    }
+
+        #services img {
+            width: 100%;
+            right: 0 !important;
+            top: 0 !important;
+            margin-bottom: 5rem;
+        }
+
+    #application {
+        height: 35rem !important;
+        background-size: 100% 30% !important;
+        background-position: 28% 100% !important;
+    }
+
+        #application h2 {
+            margin-top: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        #application img {
+            top: 0 !important;
+            right: 0 !important;
+        }
+
+    #map-canvas {
+        display: none;
+    }
+
+    #contact {
+        position: relative !important;
+        bottom: 0 !important;
+        left: 0 !important;
+    }
+
+        #contact form {
+            padding: 8rem 0 !important;
+            height: 60rem !important;
+            background-size: 100% 100% !important;
+            top: 0 !important;
+            margin-top: 2rem;
+        }
+}
+
+@media only screen and (max-width:480px) {
+
+    .main-holder {
+        background-attachment: initial !important;
+        background-size: inherit !important;
+    }
+
+    .big-banner {
+        background-position: 35% 0 !important;
+    }
+
+    .logo {
+        width: 12rem !important;
+        display: inline-block !important;
+        float: right;
+    }
+
+    .affix .logo {
+        display: none !important;
+    }
+
+    .sub-menu-holder {
+        display: none;
+    }
+
+    .affix {
+        background-color: #333 !important;
+        height: 5.5rem !important;
+        box-shadow: none !important;
+    }
+
+    .main-img {
+        height: 55rem !important;
+    }
+
+        .main-img h1 {
+            font-size: 5.7rem !important;
+            margin-top: -3rem !important;
+            margin-left: 15rem;
+        }
+
+    .buttons {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+
+        .buttons li:first-child, .buttons li:last-child {
+            margin-left: 0 !important;
+        }
+
+        .buttons li {
+            height: 19.2rem !important;
+            width: 49% !important;
+            display: inline-block !important;
+            margin: 0 auto;
+        }
+
+            .buttons li:hover {
+                background-position: 0 100% !important;
+            }
+
+            .buttons li a {
+                top: 9rem !important;
+                padding: 5rem 0 2rem 0;
+            }
+
+    #problem-solution {
+        height: auto !important;
+    }
+
+    .problem h2 {
+        font-size: 8rem !important;
+    }
+
+    #solution {
+        height: auto !important;
+        background-size: cover !important;
+    }
+
+    .solution:after {
+        font-size: 7rem !important;
+        color: #000 !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        top: -75rem !important;
+    }
+
+    #trigger-start, #steps {
+        display: none !important;
+    }
+
+    #steps-mobile {
+        display: block !important;
+    }
+
+    #why {
+        background: #f8f8f8 !important;
+    }
+
+    #services {
+        height: auto !important;
+    }
+
+        #services img {
+            width: 100%;
+            right: 0 !important;
+            top: 0 !important;
+            margin-bottom: 5rem;
+        }
+
+    #application {
+        height: 35rem !important;
+        background-size: 100% 58% !important;
+        background-position: 28% 100% !important;
+    }
+
+        #application h2 {
+            margin-top: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        #application img {
+            top: 0 !important;
+            right: 0 !important;
+        }
+
+    #map-canvas {
+        display: none;
+    }
+
+    #contact {
+        position: relative !important;
+        bottom: 0 !important;
+        left: 0 !important;
+    }
+
+        #contact form {
+            padding: 8rem 0 !important;
+            height: 60rem !important;
+            background-size: 100% 100% !important;
+            top: 0 !important;
+            margin-top: 2rem;
+        }
+}
+
+@media only screen and (max-width:640px) {
+
+    .main-holder {
+        background-attachment: initial !important;
+        background-size: inherit !important;
+    }
+
+    .big-banner {
+        background-position: 35% 0 !important;
+    }
+
+    .logo {
+        width: 12rem !important;
+        display: inline-block !important;
+        float: right;
+    }
+
+    .affix .logo {
+        display: none !important;
+    }
+
+    .sub-menu-holder {
+        display: none;
+    }
+
+    .affix {
+        background-color: #333 !important;
+        height: 5.5rem !important;
+        box-shadow: none !important;
+    }
+
+    .main-img {
+        height: 55rem !important;
+    }
+
+        .main-img h1 {
+            font-size: 5.7rem !important;
+            margin-top: -3rem !important;
+            margin-left: 15rem;
+        }
+
+    .buttons {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+
+        .buttons li:first-child, .buttons li:last-child {
+            margin-left: 0 !important;
+        }
+
+        .buttons li {
+            height: 27.2rem !important;
+            width: 49% !important;
+            display: inline-block !important;
+            margin: 12rem auto;
+        }
+
+            .buttons li:hover {
+                background-position: 0 100% !important;
+            }
+
+            .buttons li a {
+                top: 15rem !important;
+                padding: 5rem 0 2rem 0;
+            }
+
+    #problem-solution {
+        height: auto !important;
+    }
+
+    .problem h2 {
+        font-size: 8rem !important;
+    }
+
+    #solution {
+        height: auto !important;
+        background-size: cover !important;
+    }
+
+    .solution:after {
+        font-size: 7rem !important;
+        color: #000 !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        top: -71rem !important;
+    }
+
+    #trigger-start, #steps {
+        display: none !important;
+    }
+
+    #steps-mobile {
+        display: block !important;
+    }
+
+    #why {
+        background: #f8f8f8 !important;
+    }
+
+    #services {
+        height: auto !important;
+    }
+
+        #services img {
+            width: 50% !important;
+            right: 0 !important;
+            top: 0 !important;
+            margin-bottom: 5rem;
+        }
+
+    #application {
+        height: 35rem !important;
+        background-size: 100% 58% !important;
+        background-position: 28% 100% !important;
+    }
+
+        #application h2 {
+            margin-top: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        #application img {
+            top: 0 !important;
+            right: 0 !important;
+        }
+
+    #map-canvas {
+        display: none;
+    }
+
+    #contact {
+        position: relative !important;
+        bottom: 0 !important;
+        left: 0 !important;
+    }
+
+        #contact form {
+            padding: 8rem 0 !important;
+            height: 60rem !important;
+            background-size: 100% 100% !important;
+            top: 0 !important;
+            margin-top: 2rem;
+        }
+}
+
+@media only screen and (max-width:768px) {
+    .affix .container-80 {
+        width: 100% !important;
+        padding-right: 0 !important;
+    }
+
+    .sub-menu-holder {
+        display: none !important;
+    }
+
+
+    /*.main-holder {
+        background-attachment: initial !important;
+        background-size: inherit !important;
+        background-position: 35% 0 !important;
+    }
+
+    .logo {
+        width: 12rem !important;
+        display: inline-block !important;
+        float: right;
+    }
+
+    .affix .logo {
+        display: none !important;
+    }
+
+    .sub-menu-holder {
+        display: none;
+    }
+
+    .affix {
+        background-color: #333 !important;
+        height: 5.5rem !important;
+        box-shadow: none !important;
+    }
+
+    .main-img {
+        
+        height: 55rem !important;
+    }
+
+        .main-img h1 {
+            font-size: 5.7rem !important;
+            margin-top: -3rem !important;
+            margin-left: 15rem;
+        }
+
+    .buttons {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+
+        .buttons li:first-child, .buttons li:last-child {
+            margin-left: 0 !important;
+        }
+
+        .buttons li {
+            height: 27.2rem !important;
+            width: 49% !important;
+            display: inline-block !important;
+            margin: 12rem auto;
+        }
+
+            .buttons li:hover {
+                background-position: 0 100% !important;
+            }
+
+            .buttons li a {
+                top: 15rem !important;
+                    padding: 5rem 0 2rem 0;
+            }
+
+    #problem-solution {
+        height: auto !important;
+    }
+
+    .problem h2 {
+        font-size: 8rem !important;
+    }
+
+    #solution {
+        height: auto !important;
+        background-size: cover !important;
+    }
+
+    .solution:after {
+        font-size: 7rem !important;
+        color: #000 !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        top: -71rem !important;
+    }
+
+    #trigger-start, #steps {
+        display: none !important;
+    }
+
+    #steps-mobile {
+        display: block !important;
+    }
+
+    #why {
+        background: #f8f8f8 !important;
+    }
+
+    #services {
+        height: auto !important;
+    }
+
+        #services img {
+            width: 50% !important;
+            right: 0 !important;
+            top: 0 !important;
+            margin-bottom: 5rem;
+        }
+
+    #application {
+        height: 35rem !important;
+        background-size: 100% 58% !important;
+        background-position: 28% 100% !important;
+    }
+
+        #application h2 {
+            margin-top: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        #application img {
+            top: 0 !important;
+            right: 0 !important;
+        }
+
+    #map-canvas {
+        display: none;
+    }
+
+    #contact {
+        position: relative !important;
+        bottom: 0 !important;
+        left: 0 !important;
+    }
+
+        #contact form {
+            padding: 8rem 0 !important;
+            height: 60rem !important;
+            background-size: 100% 100% !important;
+            top: 0 !important;
+            margin-top: 2rem;
+        }*/
+}
+
+@media only screen and (max-width:1024px) {
+    .affix .container-80 {
+        width: 100% !important;
+        padding-right: 0 !important;
+    }
+
+    .sub-menu-holder {
+        display: none !important;
+    }
+
+
+    /*.main-holder {
+        background-attachment: initial !important;
+        background-size: inherit !important;
+        background-position: 35% 0 !important;
+    }
+
+    .logo {
+        width: 12rem !important;
+        display: inline-block !important;
+        float: right;
+    }
+
+    .affix .logo {
+        display: none !important;
+    }
+
+    .sub-menu-holder {
+        display: none;
+    }
+
+    .affix {
+        background-color: #333 !important;
+        height: 5.5rem !important;
+        box-shadow: none !important;
+    }
+
+    .main-img {
+        
+        height: 55rem !important;
+    }
+
+        .main-img h1 {
+            font-size: 5.7rem !important;
+            margin-top: -3rem !important;
+            margin-left: 15rem;
+        }
+
+    .buttons {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+
+        .buttons li:first-child, .buttons li:last-child {
+            margin-left: 0 !important;
+        }
+
+        .buttons li {
+            height: 27.2rem !important;
+            width: 49% !important;
+            display: inline-block !important;
+            margin: 12rem auto;
+        }
+
+            .buttons li:hover {
+                background-position: 0 100% !important;
+            }
+
+            .buttons li a {
+                top: 15rem !important;
+                    padding: 5rem 0 2rem 0;
+            }
+
+    #problem-solution {
+        height: auto !important;
+    }
+
+    .problem h2 {
+        font-size: 8rem !important;
+    }
+
+    #solution {
+        height: auto !important;
+        background-size: cover !important;
+    }
+
+    .solution:after {
+        font-size: 7rem !important;
+        color: #000 !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        top: -71rem !important;
+    }
+
+    #trigger-start, #steps {
+        display: none !important;
+    }
+
+    #steps-mobile {
+        display: block !important;
+    }
+
+    #why {
+        background: #f8f8f8 !important;
+    }
+
+    #services {
+        height: auto !important;
+    }
+
+        #services img {
+            width: 50% !important;
+            right: 0 !important;
+            top: 0 !important;
+            margin-bottom: 5rem;
+        }
+
+    #application {
+        height: 35rem !important;
+        background-size: 100% 58% !important;
+        background-position: 28% 100% !important;
+    }
+
+        #application h2 {
+            margin-top: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        #application img {
+            top: 0 !important;
+            right: 0 !important;
+        }
+
+    #map-canvas {
+        display: none;
+    }
+
+    #contact {
+        position: relative !important;
+        bottom: 0 !important;
+        left: 0 !important;
+    }
+
+        #contact form {
+            padding: 8rem 0 !important;
+            height: 60rem !important;
+            background-size: 100% 100% !important;
+            top: 0 !important;
+            margin-top: 2rem;
+        }*/
+}
+
+@media only screen and (max-width:1366px) {
+    .affix .container-80 {
+        width: 100% !important;
+        padding-right: 0 !important;
+    }
+
+    .sub-menu-holder {
+        display: none !important;
+    }
+
+    .affix [data-target="#sign-in"] {
+        margin-right: 0 !important;
+    }
+
+    .affix .join {
+        display: none !important;
+    }
+
+    .main-holder {
+        background-attachment: initial !important;
+        background-size: inherit !important;
+    }
+
+    .big-banner {
+        background-position: 45% 0 !important;
+    }
+
+    .buttons {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+
+        .buttons li {
+            width: 34% !important;
+        }
+
+            .buttons li:first-child {
+                margin-left: 0 !important;
+            }
+
+
+    /*
+
+    .logo {
+        width: 12rem !important;
+        display: inline-block !important;
+        float: right;
+    }
+
+    .affix .logo {
+        display: none !important;
+    }
+
+    .sub-menu-holder {
+        display: none;
+    }
+
+    .affix {
+        background-color: #333 !important;
+        height: 5.5rem !important;
+        box-shadow: none !important;
+    }
+
+    .main-img {
+        
+        height: 55rem !important;
+    }
+
+        .main-img h1 {
+            font-size: 5.7rem !important;
+            margin-top: -3rem !important;
+            margin-left: 15rem;
+        }
+
+    .buttons {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+
+        .buttons li:first-child, .buttons li:last-child {
+            margin-left: 0 !important;
+        }
+
+        .buttons li {
+            height: 27.2rem !important;
+            width: 49% !important;
+            display: inline-block !important;
+            margin: 12rem auto;
+        }
+
+            .buttons li:hover {
+                background-position: 0 100% !important;
+            }
+
+            .buttons li a {
+                top: 15rem !important;
+                    padding: 5rem 0 2rem 0;
+            }
+
+    #problem-solution {
+        height: auto !important;
+    }
+
+    .problem h2 {
+        font-size: 8rem !important;
+    }
+
+    #solution {
+        height: auto !important;
+        background-size: cover !important;
+    }
+
+    .solution:after {
+        font-size: 7rem !important;
+        color: #000 !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        top: -71rem !important;
+    }
+
+    #trigger-start, #steps {
+        display: none !important;
+    }
+
+    #steps-mobile {
+        display: block !important;
+    }
+
+    #why {
+        background: #f8f8f8 !important;
+    }
+
+    #services {
+        height: auto !important;
+    }
+
+        #services img {
+            width: 50% !important;
+            right: 0 !important;
+            top: 0 !important;
+            margin-bottom: 5rem;
+        }
+
+    #application {
+        height: 35rem !important;
+        background-size: 100% 58% !important;
+        background-position: 28% 100% !important;
+    }
+
+        #application h2 {
+            margin-top: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        #application img {
+            top: 0 !important;
+            right: 0 !important;
+        }
+
+    #map-canvas {
+        display: none;
+    }
+
+    #contact {
+        position: relative !important;
+        bottom: 0 !important;
+        left: 0 !important;
+    }
+
+        #contact form {
+            padding: 8rem 0 !important;
+            height: 60rem !important;
+            background-size: 100% 100% !important;
+            top: 0 !important;
+            margin-top: 2rem;
+        }*/
+}

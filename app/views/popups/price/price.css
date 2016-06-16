@@ -1,0 +1,59 @@
+﻿
+#price .modal-title 
+{
+    background-color:transparent !important;
+    color:#2b9ac7;
+}
+
+#price .modal-content
+{
+    margin-top:16rem;
+}
+
+#price ul
+{
+    list-style: none;
+}
+
+    #price ul li
+    {
+        list-style: none;
+        line-height: 5rem;
+    }
+
+        #price ul li:before
+        {
+            content: '';
+            display: inline-block;
+            height: 2.5rem;
+            width: 4rem;
+            background-image: url('/content/images/check.png');
+            background-repeat: no-repeat;
+            position: relative;
+            right: -2rem;
+            top: 0.5rem;
+        }
+
+#price img
+{
+    margin-top: 3rem;
+    width: 33rem;
+}
+
+
+.orderBtn
+{
+    background-color: #2C4B6A;
+    color: #fff;
+    width: 17rem;
+}
+
+    .orderBtn:hover {
+        color:#fff;
+    }
+
+
+.display-price h3
+{
+       font-size: 30px;
+}

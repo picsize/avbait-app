@@ -1,0 +1,136 @@
+﻿#sub-category
+{
+    background-image: url('/content/images/sub-category/plumbers.png');
+    background-repeat: no-repeat;
+    background-position: 68% 3%;
+    background-size: 3%;
+    padding-bottom: 8rem;
+}
+
+    #sub-category .sub-title
+    {
+        font-size: 6rem;
+        padding: 0;
+        margin-right: 3rem;
+    }
+
+    #sub-category h1
+    {
+        font-size: 3.7rem;
+        position: relative;
+        top: 3rem;
+    }
+
+    #sub-category .title
+    {
+        margin-bottom: 5rem;
+    }
+
+
+    #sub-category .category-list
+    {
+        list-style: none;
+        margin-top: 3rem;
+    }
+
+        #sub-category .category-list li
+        {
+            display: inline-block;
+        }
+
+
+            #sub-category .category-list li a
+            {
+                display: inline-block;
+                font-size: 1.7rem;
+            }
+
+
+            #sub-category .category-list li:not(:last-child):after
+            {
+                content: "|";
+            }
+
+
+
+
+        #sub-category .problem-types a
+        {
+            border-bottom: 1px solid #F5F5F5;
+            padding: 1rem;
+              font-size: 1.5rem;
+                line-height: 30px;
+                display:block;
+        }
+
+
+.problem-types
+{
+
+    direction:rtl;
+}
+
+.problem-types h3
+{
+ 
+    padding: 1rem;
+    color: #fff;
+}
+
+.problem-types div[class*="col-"]:nth-child(1) h3
+{
+       background-color: #2C4B6A;
+}
+
+.problem-types div[class*="col-"]:nth-child(2) h3
+{
+       background-color: #376698;
+}
+
+.problem-types div[class*="col-"]:nth-child(3) h3
+{
+       background-color: #6295CC;
+}
+
+.problem-types div[class*="col-"]:nth-child(4) h3
+{
+       background-color: #76A8CD;
+}
+
+.problem-types div[class*="col-"]:nth-child(5) h3
+{
+       background-color: #AAC2D4;
+}
+
+
+
+div.text-container {
+    margin: 0 auto;  
+}
+
+.text-content{
+    line-height: 1em;
+}
+
+.short-text {
+    overflow: hidden;
+    height: 15em;
+}
+
+.full-text{
+    height: auto;
+}
+
+
+.show-more
+{
+    margin-top:1rem;
+}
+
+.show-more a
+{
+    border-bottom: none !important;
+    background-color: #EAEAEA;
+    padding: 1rem 5rem !important;
+}
+

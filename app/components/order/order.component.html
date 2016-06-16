@@ -1,0 +1,150 @@
+﻿<section class="row" id="order">
+    <div class="container">
+        <div class="row">
+            <h2 class="color-light-gray font-bold">הזמנה <small class="color-blue">120 דקות ובעל מקצוע אצלך</small></h2>
+        </div>
+        <form>
+            <div class="row">
+                <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 page-header">
+                    <span>01</span>
+                    <small>פרטים אישיים</small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-lg-5 col-sm-5 col-md-5">
+
+                    <div class="row form-group placeholder-label">
+                        <input type="text" class="form-control" id="full-name">
+                        <label for="full-name">שם מלא</label>
+                    </div>
+
+                    <div class="row form-group placeholder-label">
+                        <label>דואר אלקטרוני</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="row form-group placeholder-label">
+                        <label>טלפון</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="row form-group placeholder-label">
+                        <label>כתובת</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-lg-5 col-sm-5 col-md-5 float-left">
+                    <div class="row form-group">
+                        <div class="checkbox">
+                            <input class="checkbox-input" id="diffrent-address" type="checkbox" value="" ng-checked="models.isDifferentAddress" ng-model="models.isDifferentAddress"/>
+                            <label class="checkbox-label" for="diffrent-address">הזמנה לכתובת אחרת?</label>
+                        </div>
+                    </div>
+
+                    <div class="row form-group" id="different-address-input" ng-show="models.isDifferentAddress">
+                        <label>כתובת</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 page-header">
+                    <span>02</span>
+                    <small>פרטי תשלום</small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-lg-5 col-sm-5 col-md-5">
+                    <div class="row form-group">
+                        <div class="checkbox">
+                            <input class="checkbox-input" id="credit" type="radio" name="payment" value="true" ng-model="models.payWithCredit"/>
+                            <label class="checkbox-label" for="credit">תשלום באמצעות אשראי <small>(תשלום מאובטח)</small></label>
+
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="checkbox">
+                            <input class="checkbox-input" name="payment" id="pay-check" type="radio" value="false" ng-model="models.payWithCredit" />
+                            <label class="checkbox-label" for="pay-check">תשלום באמצעות שיק לבעל המקצוע</label>
+
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="checkbox">
+                            <input class="checkbox-input" name="payment" id="cash" type="radio" value="false" ng-model="models.payWithCredit" />
+                            <label class="checkbox-label" for="cash">תשלום מזומן לבעל המקצוע</label>
+
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="checkbox">
+                            <input class="checkbox-input" name="payment" id="phone" type="radio" value="false" ng-model="models.payWithCredit" />
+                            <label class="checkbox-label" for="phone">מוקד טלפוני אב הבית</label>
+
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="checkbox">
+                            <input class="checkbox-input" id="loan" type="checkbox" value="" />
+                            <label class="checkbox-label" for="loan">זקוק להלוואה?</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-lg-5 col-sm-5 col-md-5 float-left" id="credit-form" ng-show="(models.payWithCredit == 'true' || models.payWithCredit == true)">
+                    <div class="row form-group">
+                        <label>שם מלא</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="row form-group">
+                        <label>מספר כרטיס אשראי</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="row form-group expired">
+                        <label>תוקף</label>
+                        <input type="text" placeholder="YYYY" class="text-center form-control expired-year">
+                        <input type="text" placeholder="MM" class="text-center form-control expired-year">
+                    </div>
+
+                    <div class="row form-group cvv">
+                        <div class="col-xs-12 col-lg-6 col-sm-6 col-md-6">
+                            <label>CVV</label>
+                            <input type="text" class="form-control">
+                            <small>מה זה CVV?</small>
+
+                        </div>
+                        <div class="col-xs-12 col-lg-6 col-sm-6 col-md-6">
+                            <label for="charge">מספר תשלומים</label>
+                            <select class="form-control" id="charge">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12 center-block text-center">
+                    <img class="confirmOrder" src="/content/images/orderConfirmBTN.png" />
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+</section>

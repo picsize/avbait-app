@@ -1,0 +1,85 @@
+﻿/*.main-img{
+    background-image: url('../../images/talmain.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}*/
+
+
+.main-img {
+    height: 61rem;
+}
+
+    .main-img h1 {
+        font-size: 6.7rem;
+        margin-top: 3rem;
+        line-height: 87px;
+        font-family: OpenSansHebrew-Bold;
+        opacity: 0.7;
+    }
+
+    .main-img .features {
+        margin-top: 4rem;
+    }
+
+        .main-img .features li {
+            display: inline-block;
+            padding: 1rem 6rem;
+        }
+
+            .main-img .features li:not(:last-child) {
+                border-left: 1px solid #2e4a62;
+            }
+
+            .main-img .features li img {
+                margin-bottom: 3rem;
+            }
+
+
+.buttons {
+    margin-top: 4rem;
+    padding: 0;
+    margin-right: 8rem;
+}
+
+    .buttons li {
+        display: inline-block;
+        background-size: 100%;
+        vertical-align: top;
+        background-repeat: no-repeat;
+        height: 28rem;
+        width: 24%;
+    }
+
+        .buttons li:hover {
+            background-position: 0 104%;
+        }
+
+            .buttons li:hover a span {
+                opacity: 0;
+            }
+
+        .buttons li:first-child {
+            background-image: url('/content/images/120circle.png');
+            margin-left: 12rem;
+        }
+
+        .buttons li:last-child {
+            background-image: url('/content/images/ratingcircle.png');
+            margin-left: 5rem;
+        }
+
+        .buttons li a {
+            position: relative;
+            top: 15rem;
+            right: 0;
+            font-size: 1.7rem;
+            padding: 10rem 0 2rem 0;
+        }
+
+            .buttons li a:hover {
+                text-decoration: none;
+                color: #fff;
+            }
+
+
