@@ -8,8 +8,8 @@ var avBait = angular.module('avBait',
         'ngCookies',
         'ngAnimate',
         'ngTouch',
-        'Mac',
-        'angucomplete-alt'
+        'angucomplete-alt',
+        'angular-loading-bar'
     ]);
 
 

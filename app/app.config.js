@@ -13,7 +13,7 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             abstract: true,
             templateUrl: '/app/views/website/main.html',
             controller: 'homePage',
-            data: { pageTitle: 'מה התקלה?' }
+            data: { pageTitle: 'מה הבעיה?' }
         })
         .state('website.home.category', {
             url: '/',
