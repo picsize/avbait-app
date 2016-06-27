@@ -1,0 +1,28 @@
+﻿#join
+{
+    background-image: url('/content/images/joinus.png');
+    background-repeat: no-repeat;
+    padding-top: 3rem;
+    padding-bottom: 22rem;
+    background-size: 100%;
+    height: 42rem;
+}
+
+    #join h2
+    {
+        font-size:20px;
+        margin-bottom:5rem;
+
+    }
+
+    #join button
+    {
+    background-color: #ff691f;
+    box-shadow: none;
+    color: #fff;
+    border: none;
+    padding: 1rem 6rem;
+    margin-top: 7rem;
+    font-size: 15px;
+    font-weight: bold;
+    }
