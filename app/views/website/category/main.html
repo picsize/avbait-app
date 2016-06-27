@@ -1,4 +1,4 @@
-﻿
+﻿<link href="/app/views/website/category/category.css" rel="stylesheet" />
 
 <section class="row">
     <div class="container">
@@ -9,9 +9,9 @@
         </div>
 
         <div class="row">
-            <div ng-repeat="category in models.categories track by $index" class="col-xs-6 col-lg-3 col-md-3 col-sm-3">
+            <div ng-repeat="category in models.categories track by $index" class="col-xs-6 col-lg-3 col-md-3 col-sm-3 category-holder">
                 <img alt="{{category.Name}}" src="/content/images/category/{{category.Img}}" title="{{category.Name}}"/>
-                <h3 class="font-bold"><a class="color-blue" ui-sref="website.category.sub({categoryName:category.Name})">{{category.Name}}</a></h3> <!--ng-click="setCategoryCookie(category)"-->
+                <p class="font-bold"><a class="color-blue" ui-sref="website.category.sub({categoryName:category.Name})">{{category.Name}}</a></p> <!--ng-click="setCategoryCookie(category)"-->
             </div>
         </div>
     </div>
