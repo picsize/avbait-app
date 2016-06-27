@@ -3,150 +3,29 @@
 .logo
 {
     width: 15rem;
-    margin-top: -4rem;
 }
 
-header .nav > li
-{
-    padding: 0.2rem 0.5rem;
-}
 
 .navbar
 {
     min-height: 40px;
+    margin-top: 2rem;
 }
 
-nav.sub-menu
-{
-    padding-top: 4.5rem;
-}
 
-.navbar-inverse
-{
-    background-color: transparent;
-    border: transparent;
-    border-radius: 0;
-}
 
 #navbar a
 {
-    font-size: 14px;
     color: #fff;
-    margin-top: 4.5rem;
-    padding: 0.3rem 1.5rem;
 }
 
 
-.navbar [data-target="#register"], .navbar [data-target="#sign-in"], .navbar .join
+.black-opacity
 {
-    display: none;
+    background-color: rgba(0,0,0,0.5);
 }
 
-.affix
-{
-    top: 0;
-    width: 100%;
-    z-index: 9999 !important;
-    background-color: #fff !important;
-    left: 0;
-    box-shadow: 0 0 5px #888;
-    -moz-transition: all 0.15s ease-in;
-    -o-transition: all 0.15s ease-in;
-    -webkit-transition: all 0.15s ease-in;
-    transition: all 0.15s ease-in;
-    height: 4rem;
-}
 
-    .affix .container-80
-    {
-        padding-right: 14rem;
-    }
-
-    .affix.navbar-inverse .navbar-nav > .active > a:not(.link-home),
-    .affix.navbar-inverse .navbar-nav > .active > a:not(.link-home):focus,
-    .affix.navbar-inverse .navbar-nav > .active > a:not(.link-home):hover,
-    .affix.navbar-inverse .navbar-nav > li > a:not(.link-home):focus,
-    .affix.navbar-inverse .navbar-nav > li > a:not(.link-home):hover
-    {
-        background-color: #3C5971 !important;
-        color: #fff !important;
-    }
-
-    .affix .logo
-    {
-        display: none;
-    }
-
-    .affix [data-target="#register"], .affix [data-target="#sign-in"]
-    {
-        display: block;
-        color: #000;
-        margin-top: 0.5rem;
-        background: transparent;
-        border: 1px solid #349EC9;
-        border-radius: 2px;
-        font-size: 13px !important;
-    }
-
-    .affix .join
-    {
-        display: block;
-        color: #000;
-        margin-top: 0.4rem;
-        background: transparent;
-        border: 1px solid #349EC9;
-        border-radius: 2px;
-        font-size: 13px !important;
-        margin-right: 2rem;
-    }
-
-        .affix [data-target="#register"]:hover, .affix [data-target="#sign-in"]:hover, .affix .join:hover
-        {
-            background-color: #2b9ac7;
-            color: #fff;
-        }
-
-    .affix [data-target="#register"]
-    {
-        margin-right: 3rem;
-    }
-
-
-
-    .affix a
-    {
-        color: #000 !important;
-        margin-top: 0.5rem !important;
-        font-size: 13px !important;
-    }
-
-
-    .affix .logo-affix a
-    {
-        padding: 0;
-    }
-
-
-        .affix .logo-affix a:hover, .affix .logo-affix a:active, .affix .logo-affix a:focus, .affix .logo-affix a:visited
-        {
-            background-color: #fff !important;
-        }
-
-        .affix .logo-affix a img
-        {
-            width: 100%;
-        }
-
-    .affix .sub-menu-holder
-    {
-        display: none;
-    }
-
-.sub-menu .btn
-{
-    border: none;
-    outline: none !important;
-}
 
 .signInBTN, .join
 {
@@ -154,7 +33,6 @@ nav.sub-menu
     border: 1px solid #fff;
     color: #fff;
     border-radius: 2px;
-    margin-right: 4rem;
 }
 
 
@@ -164,79 +42,15 @@ nav.sub-menu
         color: #000;
     }
 
-.affix .sub-menu button
+
+
+.login-buttons
 {
-    display: none;
+    margin-top: 6rem;
+    padding: 0;
 }
 
-.sub-menu .btn:hover, .sub-menu .btn:visited, .sub-menu .btn:focus
-{
-    background: #fff;
-    z-index: auto !important;
-}
-
-.sub-menu .btn.social:hover, .sub-menu .btn.social:active, .sub-menu .btn.social:visited, .sub-menu .btn.social:focus, .sub-menu .btn.social
-{
-    background: transparent;
-}
-
-.sub-menu button:nth-child(2n)
-{
-    border-right: 1px solid #c2c8cf;
-}
-
-.sub-menu button
-{
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-}
-
-[data-target="#register"]
-{
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-#sign-in
-{
-    margin-top: 5rem;
-}
-
-.loginBtn
-{
-    background: url('/content/images/loginBtn.png') no-repeat;
-    background-size: 100%;
-    color: #fff;
-    border-radius: 0;
-    padding: 1rem;
-    width: 100%;
-    font-size: 1.5rem;
-    border: none;
-}
-
-    .loginBtn:hover, .loginBtn:visited, .loginBtn:focus
+    .login-buttons button:not(:first-child)
     {
-        /*background: url('/content/images/loginBtn.png') no-repeat !important;*/
-        color: #fff;
-        /*background-size: 100%;*/
-    }
-
-.facebook-login
-{
-    background: url('/content/images/facebookLogin.png') no-repeat;
-    background-size: 100%;
-    color: #fff;
-    border-radius: 0;
-    padding: 1rem;
-    font-size: 1.5rem;
-    width: 100%;
-    border: none;
-}
-
-
-    .facebook-login:hover, .facebook-login:visited, .facebook-login .facebook-login:focus
-    {
-        /*background: url('/content/images/facebookLogin.png') no-repeat !important;*/
-        color: #fff;
-        /*background-size: 100%;*/
+        margin-right: 2rem;
     }

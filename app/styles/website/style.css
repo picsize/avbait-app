@@ -123,6 +123,10 @@ p
     font-size: 14px;
 }
 
+.small, small {
+    font-size: 90%;
+}
+
 
 .form-control
 {

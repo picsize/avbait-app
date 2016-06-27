@@ -1,62 +1,46 @@
 ﻿
 
-<div class="container-80 desktop-menu">
+<div class="container desktop-menu">
     <div class="row">
-        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-            <div class="col-xs-12 col-lg-7 col-md-7 col-sm-7">
-                <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="50" id="navbar">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="/">
-                                <img class="logo" src="content/images/logo.png" />
-                            </a>
-                        </div>
-                        <div>
-                            <div class="collapse navbar-collapse" id="main-menu">
-                                <ul class="nav navbar-nav">
+        <div class="col-xs-3 col-lg-3 col-md-3 col-sm-3">
+            <a class="navbar-brand" href="/">
+                <img class="logo" src="content/images/logo.png" />
+            </a>
+        </div>
+        <div class="col-xs-9 col-lg-9 col-md-9 col-sm-9 text-left login-buttons">
 
-                                    <li><a href="/#problem-solution">הפתרון שלנו</a></li>
-                                    <li><a href="/#how">איך זה עובד</a></li>
-                                    <li><a href="/#why">מדוע זה כדאי לי</a></li>
-                                    <li><a href="/#services">שירותי אב הבית</a></li>
-                                    <li><a href="/#application">אפליקציית אב הבית</a></li>
-                                    <li><a href="/#contactus">צור קשר</a></li>
-                                    <li><button type="button" class="signInBTN float-left" ng-click="login()" data-target="#sign-in">התחברות</button></li>
-                                    <li> <button type="button" class="signInBTN  float-left" ng-click="register()" data-target="#register">הרשמה</button></li>
-                                    <li><button type="button" class="float-left join">בעל מקצוע הצטרף אלינו</button></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-
-            <div class="col-xs-12 col-lg-5 col-md-5 col-sm-5 sub-menu-holder">
-                <nav class="sub-menu text-left float-right">
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="signInBTN" ng-click="login()" data-target="#sign-in">התחברות</button>
-
-                        <button type="button" class="signInBTN" ng-click="register()" data-target="#register">הרשמה</button>
-                        
-
-                        <button class="join">בעל מקצוע הצטרף אלינו</button>
-
-                    </div>
-
-                    <!--<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>-->
-
-                </nav>
-            </div>
-
-
+            <button type="button" class="signInBTN" ng-click="login()" data-target="#sign-in">התחברות</button>
+            <button type="button" class="signInBTN" ng-click="register()" data-target="#register">הרשמה</button>
+            <button type="button" class="join">בעל מקצוע הצטרף אלינו</button>
 
         </div>
     </div>
+    <div class="row">
+
+
+        <nav class="navbar black-opacity" id="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/#problem-solution">הפתרון שלנו</a></li>
+                            <li><a href="/#how">איך זה עובד</a></li>
+                            <li><a href="/#why">מדוע זה כדאי לי</a></li>
+                            <li><a href="/#services">שירותי אב הבית</a></li>
+                            <li><a href="/#application">אפליקציית אב הבית</a></li>
+                            <li><a href="/#contactus">צור קשר</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 </div>
 
-<div class="mobile-menu"> </div>
