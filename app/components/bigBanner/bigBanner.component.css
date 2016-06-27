@@ -1,58 +1,48 @@
-﻿.main-img
-{
+﻿.main-img {
     height: 51rem;
 }
 
-    .main-img h1
-    {
+    .main-img h1 {
         font-size: 3.7rem;
         margin-top: 3rem;
         line-height: 87px;
     }
 
-    .main-img .features
-    {
+    .main-img .features {
         margin-top: 4rem;
         padding: 0;
     }
 
-        .main-img .features li
-        {
+        .main-img .features li {
             display: inline-block;
             padding: 1rem 6rem;
         }
 
-            .main-img .features li:first-child
-            {
+            .main-img .features li:first-child {
                 padding: 1rem 0 1rem 6rem;
             }
 
-            .main-img .features li a
-            {
+            .main-img .features li a {
                 color: #fff;
             }
 
-            .main-img .features li:not(:last-child)
-            {
+            .main-img .features li:not(:last-child) {
                 border-left: 1px solid #1a353f;
                 height: 8rem;
             }
 
-            .main-img .features li img
-            {
+            .main-img .features li img {
                 margin-bottom: 3rem;
             }
 
 
-#progressbarfirst
-{
+#process {
     overflow: hidden;
     /*CSS counters to number the steps*/
     counter-reset: step;
 }
 
-    #progressbarfirst li
-    {
+    #process li {
         list-style-type: none;
         color: #fff;
         text-transform: uppercase;
@@ -64,8 +54,7 @@
         font-weight: bold;
     }
 
-        #progressbarfirst li:before
-        {
+        #process li:before {
             content: counter(step);
             counter-increment: step;
             line-height: 49px;
@@ -90,18 +79,16 @@
             text-align: center;
         }
 
-        #progressbarfirst li.active:before
-        {
+        #process li.active:before {
             color: #132c45;
             background-color: #dfe1e1;
             border: none;
         }
 
-        #progressbarfirst li small
-        {
-    display: inline-block;
-    text-indent: 11.8rem;
-    position: relative;
-    top: -1rem;
-    font-weight: normal;
+        #process li small {
+            display: inline-block;
+            text-indent: 11.8rem;
+            position: relative;
+            top: -1rem;
+            font-weight: normal;
         }

@@ -10,16 +10,17 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             templateUrl: '/app/views/website/index.html'
         })
         .state('website.home', {
-            url: '/',
+            abstract: true,
             templateUrl: '/app/views/website/main.html',
             controller: 'homePage',
-            data: { pageTitle: 'ראשי' }
+            data: { pageTitle: 'מה התקלה?' }
         })
-        .state('website.category', {
-            abstract: true,
-            templateUrl: '/app/views/website/category/category.html',
+        .state('website.home.category', {
+            url: '/',
+            controller: 'category',
+            templateUrl: '/app/views/website/category/main.html',
         })
-        .state('website.category.main', {
+        /*.state('website.category.main', {
             url: '/category',
             templateUrl: '/app/views/website/category/main.html',
             controller: 'category',
@@ -76,7 +77,7 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
         .state('admin', {
             url: '/admin',
             templateUrl: '/app/views/admin/main.html',
-        })
+        })*/
 
     $logProvider.debugEnabled(true);
 

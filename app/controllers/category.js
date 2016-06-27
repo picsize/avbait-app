@@ -15,7 +15,6 @@ avBait.controller('category', function ($rootScope, $scope, $stateParams, Cookie
     $scope.openPopup = function (name, price) {
         var data = { name: name, price: price };
         Popup.open('popup-category', 'popupCategory', data);
-
     }
 
     $scope.init = function () {
