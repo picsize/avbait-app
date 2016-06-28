@@ -29,15 +29,15 @@
     <div class="col-xs-12 white-opacity steps-row">
         <div class="container">
             <ul id="process">
-                <li ng-class="{'active':process.firstStep}">
+                <li ng-class="{'active':$parent.steps.firstStep}">
                     מה התקלה או השירות
                     <small>בחר את סוג בעל המקצוע</small>
                 </li>
-                <li ng-class="{'active':process.secondStep}">
+                <li ng-class="{'active':$parent.steps.secondStep}">
                     בחר מסלול
                     <small>הנוח ביותר עבורך</small>
                 </li>
-                <li ng-class="{'active':process.lastStep}">
+                <li ng-class="{'active':$parent.steps.lastStep}">
                     ביצוע הזמנה
                     <small>מגוון אפשרויות תשלום</small>
                 </li>

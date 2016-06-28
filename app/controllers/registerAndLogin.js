@@ -1,18 +1,26 @@
 ﻿
-avBait.controller('registerAndLogin', function ($scope, $uibModalInstance, data, Server) {
-   
+avBait.controller('registerAndLogin', function ($rootScope, $scope, $uibModalInstance, data, Server, Cookie) {
+
     $scope.models = {
-        email:'',
-        password:'',
-        userType:3,
-        fullName:'',
-        mobileNumber:'',
-        homeNumber:'',
-        familyStatus:'M',
-        gender:'M',
-        address:'',
+        email: '',
+        password: '',
+        userType: 3,
+        fullName: '',
+        mobileNumber: '',
+        homeNumber: '',
+        familyStatus: 'M',
+        gender: 'M',
+        address: '',
         birthday: moment().format('DD/MM/YYYY'),
-        image:''
+        image: ''
+    }
+
+    $scope.strings = {
+        login: 'כניסה'
+    }
+
+    $scope.validation = {
+        login: true
     }
 
     $scope.close = function () {
@@ -20,7 +28,7 @@ avBait.controller('registerAndLogin', function ($scope, $uibModalInstance, data,
     }
 
     $scope.registerUser = function () {
-        Server.post('register',$scope.models)
+        Server.post('register', $scope.models)
         .success(function (res) {
             var data = JSON.parse(res.d);
             if (data.state == 1) {
@@ -35,15 +43,28 @@ avBait.controller('registerAndLogin', function ($scope, $uibModalInstance, data,
     }
 
     $scope.loginUser = function () {
-        Server.post('login', {email:$scope.models.email, password: $scope.models.password})
+        Server.post('login', { email: $scope.models.email, password: $scope.models.password })
         .success(function (res) {
             res = JSON.parse(res.d);
-            console.log('login',res);
+            console.log('login', res);
+            if (res.state == 1) {
+                Cookie.saveObject('user', res.user);
+                $rootScope.user = res.user;
+                $scope.close();
+            }
         })
         .error(function (res) {
-
+            //alert('ארעה תקלה במהלך ההתחברות. אנא נסו שנית במועד מאוחר יותר');
+            //$scope.close();
+            $scope.strings.login = 'שם משתמש או סיסמה שגויים';
+            $scope.validation.login = false;
         })
     };
+
+    $scope.changeValidation = function () {
+        $scope.strings.login = 'כניסה';
+        $scope.validation.login = true;
+    }
 
 });
 

@@ -1,36 +1,36 @@
-﻿
-<div class="modal-header">
-    <h3 class="modal-title text-center center-block font-bold">התחברות</h3>
-</div>
-<div class="modal-body">
-    <div class="row">
-        <div class="col-xs-12 col-lg-8 col-md-8 col-sm-8 center-block">
-            <form role="form">
+﻿<form role="form">
+    <div class="modal-header">
+        <h3 class="modal-title text-center center-block font-bold">התחברות</h3>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-12 col-lg-8 col-md-8 col-sm-8 center-block">
+
                 <div class="row form-group">
-                    <label>דואר אלקטרוני</label>
-                    <input type="text" class="form-control" ng-model="models.email">
+                    <label class="required">דואר אלקטרוני</label>
+                    <input type="text" class="form-control text-left" ng-model="models.email" required ng-focus="changeValidation()">
                 </div>
                 <div class="row form-group">
-                    <label>סיסמא</label>
-                    <input type="text" class="form-control" ng-model="models.password">
+                    <label class="required">סיסמא</label>
+                    <input type="password" class="form-control" ng-model="models.password" required ng-focus="changeValidation()">
                 </div>
-            </form>
-        </div>
-    </div>    
-</div>
-<div class="modal-footer">
-    <div class="row">
-        <div class="col-xs-12 col-lg-6 col-md-6 col-sm-6 text-center">
-            <button type="button" class="btn btn-default loginBtn" ng-click="loginUser()">כניסה</button>
-        </div>
-        <div class="col-xs-12 col-lg-6 col-md-6 col-sm-6 text-center">
-            <button type="button" class="btn btn-default facebook-login">כניסה באמצעות פייסבוק</button>
+
+            </div>
         </div>
     </div>
-   
-</div>
+    <div class="modal-footer">
+        <div class="row">
+            <div class="col-xs-12 col-lg-6 col-md-6 col-sm-6 text-center">
+                <button type="submit" class="btn btn-default loginBtn" ng-click="loginUser()" ng-class="{'btn-danger': !validation.login}">{{strings.login}}</button>
+            </div>
+            <div class="col-xs-12 col-lg-6 col-md-6 col-sm-6 text-center">
+                <button type="button" class="btn btn-primary facebook-login">כניסה באמצעות פייסבוק</button>
+            </div>
+        </div>
 
+    </div>
 
+</form>
 
 
 
