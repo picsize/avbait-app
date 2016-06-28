@@ -160,7 +160,7 @@ public class api : System.Web.Services.WebService
             {
                 all.Add((Category)title);
                 title.SubCategory = new List<SubCategory>();
-                List<SubCategory> subs = _subCategory.getAll(string.Format("where Title = '{0}'", title.Title));
+                List<SubCategory> subs = _subCategory.getAll(string.Format("where ParentId = {0} and Title = '{1}'", categoryId, title.Title));
                 foreach (SubCategory sub in subs)
                 {
                     title.SubCategory.Add(sub);

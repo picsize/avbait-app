@@ -15,51 +15,61 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             controller: 'mainController',
             data: { pageTitle: 'מה הבעיה?' }
         })
-        //.state('website.home.category', {
-        //    url: '/home',
-        //    controller: 'category',
-        //    templateUrl: '/app/views/website/category/main.html',
-        //})
-        .state('website.home.slug', {
-            url: '/:slug',
-            templateProvider: ['type', '$templateRequest',
-              function (type, templateRequest) {
-                  var tamplate = '';
-                  switch (type) {
-                      case 'main': {
-                          tamplate = '/app/views/website/category/main.html';
-                      } break;
-                      case 'category': {
-                          tamplate = '/app/views/website/category/sub-category.html'
-                      } break;
-                      default: { } break;
+        .state('website.home.category', {
+            url: '/',
+            controller: 'mainController',
+            templateUrl: '/app/views/website/category/main.html',
+        })
+        //.state('website.home.slug', {
+        //    url: '/:slug',
+        //    templateProvider: ['type', '$templateRequest',
+        //      function (type, templateRequest) {
+        //          var tamplate = '';
+        //          switch (type) {
+        //              case 'main': {
+        //                  tamplate = '/app/views/website/category/main.html';
+        //              } break;
+        //              case 'category': {
+        //                  tamplate = '/app/views/website/category/sub-category.html'
+        //              } break;
+        //              default: { } break;
 
-                  }
-                  return templateRequest(tamplate);
-              }
-            ],
-            controllerProvider: ['type',
-              function (type) {
-                  return type + 'Controller';
-              }
-            ],
-            resolve: {
-                type: ['$http', '$stateParams',
-                  function ($http, $stateParams) {
-                      return $http.get("route.json")
-                        .then(function (response) {
-                            var routeType = 'main';
-                            for (var i = 0; i < response.data.routes.length; i++) {
-                                if (response.data.routes[i].Slug == $stateParams.slug) {
-                                    routeType = response.data.routes[i].Type;
-                                    break;
-                                }
-                            }
-                            return routeType;
-                        })
-                  }
-                ]
-            }
+        //          }
+        //          return templateRequest(tamplate);
+        //      }
+        //    ],
+        //    controllerProvider: ['type',
+        //      function (type) {
+        //          return type + 'Controller';
+        //      }
+        //    ],
+        //    resolve: {
+        //        type: ['$http', '$stateParams',
+        //          function ($http, $stateParams) {
+        //              return $http.get("route.json")
+        //                .then(function (response) {
+        //                    var routeType = 'main';
+        //                    for (var i = 0; i < response.data.routes.length; i++) {
+        //                        if (response.data.routes[i].Slug == $stateParams.slug) {
+        //                            routeType = response.data.routes[i].Type;
+        //                            break;
+        //                        }
+        //                    }
+        //                    return routeType;
+        //                })
+        //          }
+        //        ]
+        //    }
+        //})
+        .state('website.home.subCategories', {
+            url: '/category/:slug',
+            controller: 'categoryController',
+            templateUrl: '/app/views/website/category/sub-category.html',
+        })
+        .state('website.home.choose', {
+            url: '/choose',
+            //controller: 'categoryController',
+            templateUrl: '/app/views/website/category/category-choose.html',
         })
         .state('website.home.rating', {
             url: '/rating',
@@ -67,7 +77,7 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             templateUrl: '/app/views/website/rating/rating-sub-category.html',
         })
         .state('website.business', {
-            url: '/busniess',
+            url: '/business',
             //controller: 'category',
             templateUrl: '/app/views/website/handyman.html',
         })

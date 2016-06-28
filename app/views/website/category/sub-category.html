@@ -9,57 +9,20 @@
     <div class="container">
         <ul class="nav nav-tabs">
             <li ng-repeat="category in models.subCategories track by $index" ng-class="{'active': $index == 0}">
-                <a data-toggle="tab" href="#cat-{{category.Title}}">{{category.Title}}</a>
+                <a data-toggle="tab" href="#cat-{{$index}}">{{category.Title}}</a>
             </li>
         </ul>
 
         <div class="tab-content">
-            <div class="tab-pane fade" ng-repeat="category in models.subCategories track by $index" ng-class="{'in active': $index == 0}" id="cat-{{category.Title}}">
-
-            </div>
-
-
-            <div id="home" class="tab-pane fade in active">
-                <h3>HOME</h3>
-                <p>Some content.</p>
-            </div>
-            <div id="menu1" class="tab-pane fade">
-                <h3>Menu 1</h3>
-                <p>Some content in menu 1.</p>
-            </div>
-            <div id="menu2" class="tab-pane fade">
-                <h3>Menu 2</h3>
-                <p>Some content in menu 2.</p>
+            <div class="tab-pane fade" ng-repeat="category in models.subCategories track by $index" ng-class="{'in active': $index == 0}" id="cat-{{$index}}">
+               <div class="col-xs-3 col-lg-3 col-md-3 col-sm-3" ng-repeat="sub in category.SubCategory track by $index">
+                   <a ui-sref="website.home.choose" ng-click="saveCategory(sub)">{{sub.Name}}</a>
+               </div>
             </div>
         </div>
     </div>
 </section>
 
-
-
-<section class="row" id="sub-category">
-    <div class="container">
-        <div class="row title">
-            <div class="col-xs-3 col-lg-3 col-md-3 col-sm-3">
-                <h1 class="font-bold color-blue">{{models.selectedCategory}}</h1>
-            </div>
-            <!--<div class="col-xs-4 col-lg-4 col-md-4 col-sm-4 text-center">
-                <h2 class="font-bold text-right color-light-gray sub-title">מה התקלה</h2>
-            </div>-->
-
-        </div>
-
-        <div class="row center-block text-center problem-types">
-            <div class="col-xs-12 col-lg-15 col-sm-15 col-md-15 text-container"
-                 ng-repeat="category in models.subCategoriesByTitle track by $index">
-                <h3>{{category.Title}}</h3>
-                <div class="text-right text-content short-text short-text">
-                    <a ng-repeat="sub in models.subCategoriesByTitle[$index].SubCategory" ui-sref="website.category.order({categoryName:models.selectedCategory, subCategoryName:sub.Name})">{{sub.Name}}</a> <!--ng-click="openPopup(sub.Name, sub.Price, sub.Id)"-->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 
