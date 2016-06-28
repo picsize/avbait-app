@@ -49,6 +49,10 @@ public class api : System.Web.Services.WebService
             int num = _user.register(email, password, userType, fullName, mobileNumber, homeNumber, char.Parse(familyStatus), char.Parse(gender), address, DateTime.Parse(birthday), image);
             Dictionary<string, object> res = new Dictionary<string, object>();
             res.Add("state", num);
+
+            string msg = string.Format("ברכות! נרשמת בהצלחה לאב הבית. המהפיכה בשוק בעלי המקצוע התחילה. אל תישארו מאחור");
+
+            res.Add("emailComfirmation", _emailer.sendEmail(email, "הרשמה לאתר אב הבית", msg));
             return convertToJson(res);
         }
         catch (Exception ex)
