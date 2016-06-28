@@ -20,7 +20,7 @@
     .page-banner .features li
     {
         display: inline-block;
-        padding: 1rem 6rem;
+        padding: 1rem 4rem;
     }
 
         .page-banner .features li p
@@ -37,4 +37,5 @@
         .page-banner .features li img
         {
             margin-bottom: 3rem;
+            width: 5.5rem;
         }

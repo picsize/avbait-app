@@ -30,6 +30,9 @@ a:hover
 .modal-content
 {
     margin-top: 13rem;
+    background:url('/content/images/blueprint.jpg') no-repeat;
+    background-size:cover;
+    background-color:none;
 }
 
 .float-left

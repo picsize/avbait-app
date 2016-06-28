@@ -4,7 +4,7 @@
 
     .main-img h1 {
         font-size: 3.7rem;
-        margin-top: 3rem;
+        margin-top: -2rem;
         line-height: 87px;
     }
 
@@ -27,7 +27,7 @@
             }
 
             .main-img .features li:not(:last-child) {
-                border-left: 1px solid #1a353f;
+                border-left: 1px solid #fff;
                 height: 8rem;
             }
 
@@ -35,11 +35,17 @@
                 margin-bottom: 3rem;
             }
 
+.features p
+{
+    font-size:16px;
+    color:#000;
+}
+
 
 
 .steps-row
 {
-        margin-top:6rem;
+              margin-top: 12.8rem;
 }
 
 #process {
@@ -50,15 +56,15 @@
 }
 
     #process li {
-        list-style-type: none;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 14px;
-        width: 33.33%;
-        float: right;
-        position: relative;
-        text-align: right;
-        font-weight: bold;
+    list-style-type: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 33.33%;
+    float: right;
+    position: relative;
+    text-align: right;
+    font-weight: bold;
     }
 
         #process li:before {
