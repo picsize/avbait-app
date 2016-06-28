@@ -12,6 +12,13 @@ var avBait = angular.module('avBait',
         'angular-loading-bar'
     ]);
 
+avBait.run(function (Server, $rootScope) {
+    Server.post('getRoute')
+    .success(function (res) {
+        $rootScope.routing = JSON.parse(res.d).routes;
+    })
+    .error(function (res) { })
+});
 
 
 

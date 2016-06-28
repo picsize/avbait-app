@@ -1,4 +1,42 @@
 ﻿
+<section class="row">
+    <div class="container">
+        <h1>{{models.slug}}</h1>
+    </div>
+</section>
+
+<section class="row">
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li ng-repeat="category in models.subCategories track by $index" ng-class="{'active': $index == 0}">
+                <a data-toggle="tab" href="#cat-{{category.Title}}">{{category.Title}}</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade" ng-repeat="category in models.subCategories track by $index" ng-class="{'in active': $index == 0}" id="cat-{{category.Title}}">
+
+            </div>
+
+
+            <div id="home" class="tab-pane fade in active">
+                <h3>HOME</h3>
+                <p>Some content.</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Menu 1</h3>
+                <p>Some content in menu 1.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Menu 2</h3>
+                <p>Some content in menu 2.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 <section class="row" id="sub-category">
     <div class="container">
         <div class="row title">
@@ -26,56 +64,7 @@
 
 
 
-    <script>
-        $(".show-more a").each(function () {
-            var $link = $(this);
-            var $content = $link.parent().prev("div.text-content");
-
-            //console.log($link);
-
-            var visibleHeight = $content[0].clientHeight;
-            var actualHide = $content[0].scrollHeight - 1;
-
-            console.log(actualHide);
-            console.log(visibleHeight);
-
-            if (actualHide > visibleHeight) {
-                $link.show();
-            } else {
-                $link.hide();
-            }
-        });
-
-        $(".show-more a").on("click", function () {
-            var $link = $(this);
-            var $content = $link.parent().prev("div.text-content");
-            var linkText = $link.text();
-
-            $content.toggleClass("short-text, full-text");
-
-            $link.text(getShowLinkText(linkText));
-
-            return false;
-        });
-
-        function getShowLinkText(currentText) {
-            var newText = '';
-
-            if (currentText.toUpperCase() === "הצג פחות") {
-                newText = "הצג עוד";
-            } else {
-                newText = "הצג פחות";
-            }
-
-            return newText;
-        }
-
-        $(document).on('click', '[data-target="#popup"]', function () {
-            $('.display-price h3:last-child').text($(this).attr('data-price'));
-            $('.display-price h3:first-child').text($(this).text());
-        });
-
-    </script>
+    
 
 
 

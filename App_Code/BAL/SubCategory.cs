@@ -17,6 +17,7 @@ public class SubCategory : Category
     public int Id { get; private set; }
     public string Name { get; private set; }
     public string Title { get; private set; }
+    public string Slug { get; private set; }
 
     #endregion
 

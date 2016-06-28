@@ -1,43 +1,40 @@
 ﻿
-avBait.controller('category', function ($rootScope, $scope, $stateParams, Cookie, Popup, Server) {
+avBait.controller('categoryController', function ($rootScope, $scope, $stateParams, Cookie, Popup, Server) {
 
     $rootScope.steps = {
         firstStep: true,
         secondStep: false,
-        lastStep:false
+        lastStep: false
     };
 
     $scope.models = {
-        categories: [],
-        subcategories: []
-    }
-
-    $scope.openPopup = function (name, price) {
-        var data = { name: name, price: price };
-        Popup.open('popup-category', 'popupCategory', data);
+        slug: $stateParams.slug,
+        category: {},
+        subCategories: []
     }
 
     $scope.init = function () {
-        Server.post('getCategories')
+        Server.post('getCategoryBySlug', { slug: $scope.models.slug })
         .success(function (res) {
-            $scope.models.categories = JSON.parse(res.d).categories;
-            console.log($scope.models);
+            if (JSON.parse(res.d).state == 1) {
+                $scope.models.category = JSON.parse(res.d).category;
+                $scope.getSubCategories();
+            }
         })
-        .error(function (res) {
-            console.log(res)
-        })
+        .error(function (res) { })
     }
 
     $scope.getSubCategories = function () {
-        var subCategories = [];
-
-        for (var i = 0; i < $scope.models.categories.length; i++) {
-            for (var j = 0; j < $scope.models.categories[i].SubCategory.length; j++) {
-                subCategories.push($scope.models.categories[i].SubCategory[j]);
-            }
-        }
-
-        return subCategories;
+        Server.post('getSubCategories', { categoryId: $scope.models.category.Id })
+       .success(function (res) {
+           if (JSON.parse(res.d).state == 1) {
+               $scope.models.subCategories = JSON.parse(res.d).subCategories;
+               console.log('sub', $scope.models.subCategories);
+           }
+       })
+       .error(function (res) {
+           console.log(res)
+       })
     }
 
     $scope.setCategoryCookie = function (category) {

@@ -16,6 +16,8 @@ public class Category
     public int Id { get; private set; }
     public string Img { get; private set; }
     public string Name { get; private set; }
+    public string Type { get; private set; }
+    public string Slug { get; private set; }
     public List<SubCategory> SubCategory { get;  set; }
     //public List<SubCategory> SubCategory {
     //    get {
@@ -48,5 +50,10 @@ public class Category
     internal List<Category> getAll()
     {
         return _db.getAllCategories();
+    }
+
+    internal Category getCategoryBySlug(string slug)
+    {
+        return _db.getCategoryBySlug(slug);
     }
 }

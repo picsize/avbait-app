@@ -7,12 +7,7 @@
                 url: baseUrl + handler,
                 method: 'POST',
                 data: (data != undefined) ? JSON.stringify(data) : '',
-                contentType: 'application/json',
-                //withCredentials: true,
-                //headers: {
-                //    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-                //    'Authorization': function () { return null; }
-                //}
+                contentType: 'application/json'
             });
         },
 
