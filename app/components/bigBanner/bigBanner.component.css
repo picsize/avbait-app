@@ -36,10 +36,17 @@
             }
 
 
+
+.steps-row
+{
+        margin-top:6rem;
+}
+
 #process {
     overflow: hidden;
     /*CSS counters to number the steps*/
     counter-reset: step;
+
 }
 
     #process li {
