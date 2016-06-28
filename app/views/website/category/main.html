@@ -12,7 +12,7 @@
             <ul class="categories-list">
                 <li ng-repeat="category in models.categories track by $index" class="category-holder">
                     <img alt="{{category.Name}}" src="/content/images/category/{{category.Img}}" title="{{category.Name}}" />
-                    <p class="font-bold"><a class="color-blue" ui-sref="website.category.sub({categoryName:category.Name})">{{category.Name}}</a></p>
+                    <p class="font-bold"><a class="color-blue" ui-sref="website.home.slug({slug:category.Slug})">{{category.Name}}</a></p>
                 </li>
             </ul>
             <!--ng-click="setCategoryCookie(category)"-->
