@@ -1,0 +1,33 @@
+﻿.choose-cat
+{
+    padding-top:5rem;
+    padding-bottom:15rem;
+}
+
+    .choose-cat .col-md-6:last-child
+    {
+        border-right:1px solid #d7ddeb;
+
+    }
+
+.choose-cat h3
+{
+    font-size:18px;
+}
+
+.choose-cat p
+{
+    margin-top:2rem;
+        margin-bottom: 7rem;
+    line-height:25px;
+}
+
+.choose-cat a
+{
+    background-color:#ff691f;
+    color:#fff;
+    border:none;
+    box-shadow:none;
+    padding:1rem 4rem;
+    margin-bottom:5rem;
+}
