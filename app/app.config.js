@@ -20,6 +20,16 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             controller: 'category',
             templateUrl: '/app/views/website/category/main.html',
         })
+        .state('website.home.rating', {
+            url: '/rating',
+            //controller: 'category',
+            templateUrl: '/app/views/website/rating/rating-sub-category.html',
+        })
+        .state('website.business', {
+            url: '/busniess',
+            //controller: 'category',
+            templateUrl: '/app/views/website/handyman.html',
+        })
         /*.state('website.category.main', {
             url: '/category',
             templateUrl: '/app/views/website/category/main.html',
