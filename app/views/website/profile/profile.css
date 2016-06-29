@@ -1,22 +1,18 @@
-﻿#handyman-page #search-home
-{
+﻿#handyman-page #search-home {
     opacity: 0;
 }
 
-    #handyman-page #search-home.affix
-    {
+    #handyman-page #search-home.affix {
         opacity: 1 !important;
     }
 
 
-.profile
-{
-        margin-top: 3rem !important;
+.profile {
+    margin-top: 3rem !important;
 }
 
 
-.profileImg
-{
+.profileImg {
     width: 62%;
     margin-top: 1rem;
     border: 5px solid #fff;
@@ -25,8 +21,7 @@
 }
 
 
-.professional
-{
+.professional {
     content: "";
     background-image: url('/content/images/profesionalIcon.png');
     display: inline-block;
@@ -39,8 +34,7 @@
     vertical-align: middle;
 }
 
-.location
-{
+.location {
     content: "";
     background-image: url('/content/images/location.png');
     display: inline-block;
@@ -57,112 +51,89 @@
 
 
 
-#about p
-{
+#about p {
     line-height: 30px;
 }
 
-#review img
-{
+#review img {
     margin-left: 1rem;
     margin-bottom: 1rem;
-
 }
 
-.review
-{
+.review {
     margin-bottom: 5rem;
 }
 
-    .review img
-    {
-            width: 20%;
-    margin-left: 2rem;
+    .review img {
+        width: 20%;
+        margin-left: 2rem;
     }
 
-.price
-{
+.price {
     padding: 1.5rem;
     margin: 0;
 }
 
-
-
-
-
-.vendor-details
-{
+.profile-details {
     margin-bottom: 5rem;
     background-color: #f9f9f9;
     height: 8rem;
+    margin-bottom: 11rem;
 }
 
 
 
 
-    .vendor-details h3
-    {
+    .profile-details h3 {
         border-left: 1px solid #EAEAEA;
         padding: 1.5rem 0;
         text-align: center;
         margin: 1.5rem 0;
     }
 
-        .vendor-details h3.font-bold
-        {
-            border-left:none !important;
+        .profile-details h3.font-bold {
+            border-left: none !important;
         }
 
-    .vendor-details > .container > div[class*="col-"]
-    {
+    .profile-details > .container > div[class*="col-"] {
         padding: 0;
     }
 
-.phone
-{
+.phone {
     background-color: #E6E6E6;
     color: #5D98C0;
 }
 
-.ratingstars
-{
+.ratingstars {
     margin-top: -2.5rem;
 }
 
 
-.profile, .profile .container-80, .profile .hours, .profile .days
-{
-    padding:0;
-    margin:0;
+.profile, .profile .container-80, .profile .hours, .profile .days {
+    padding: 0;
+    margin: 0;
 }
 
 
-    .profile h4
-    {
-            background-color: #f37321;
-    padding: 1rem;
-    color: #fff;
+    .profile h4 {
+        background-color: #f37321;
+        padding: 1rem;
+        color: #fff;
     }
 
-.table-pricing
-{
-    margin-bottom:5rem;
-    padding:0;
+.table-pricing {
+    margin-bottom: 5rem;
+    padding: 0;
 }
 
-    .table-pricing .price
-    {
+    .table-pricing .price {
         border-bottom: 1px dashed #000;
-
     }
 
-        .table-pricing .price:first-child
-    {
-        border-top: 1px dashed #000;
+        .table-pricing .price:first-child {
+            border-top: 1px dashed #000;
+        }
 
-    }
-
-        .table-pricing .price:hover
-        {
-            background-color:rgba(245, 245, 245, 0.58);
+        .table-pricing .price:hover {
+            background-color: rgba(245, 245, 245, 0.58);
         }

@@ -31,6 +31,11 @@ avBait.run(function (Server, $rootScope) {
             (elem.val() != '') ? elem.addClass('has-text') : elem.removeClass('has-text');
         });
     }, 1000 * 0.5);
+
+    $rootScope.showTab = function (id) {
+        angular.element('.tab-pane').removeClass('in active');
+        angular.element(id).addClass('in active');
+    }
     
 });
 

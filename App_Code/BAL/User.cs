@@ -21,14 +21,13 @@ public class User
     public char Gender { get; private set; }
     public string HomeNumber { get; private set; }
     public int Id { get; private set; }
-    public string Image { get; private set; }
+    public string Img { get; private set; }
     public bool IsActive { get; private set; }
     public string MobileNumber { get; private set; }
     public string Password { get; private set; }
     public int UserType { get; private set; }
     public string GenderString { get; private set; }
     public string FamilyStatusString { get; private set; }
-    public string BirthdayString { get; private set; }
 
     #endregion
 
@@ -54,11 +53,11 @@ public class User
         Address = address;
         FamilyStatus = familyStatus;
         Birthday = birthday;
-        Image = image;
+        Img = image;
     }
 
     public User(int id, string email, string password, bool isActive, int userType, string fullName, string mobileNumber,
-        string homeNumber, string familyStatusString, string genderString, string address, string birthdayString, string image)
+        string homeNumber, string familyStatusString, string genderString, string address, string image)
     {
         Id = id;
         Email = email;
@@ -71,8 +70,7 @@ public class User
         GenderString = genderString;
         Address = address;
         FamilyStatusString = familyStatusString;
-        BirthdayString = birthdayString;
-        Image = image;
+        Img = image;
     }
 
     //register user

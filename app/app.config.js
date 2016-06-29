@@ -86,7 +86,7 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             css: '/app/views/website/profile/profile.css'
         })
         .state('website.user', {
-            url: '/user/:slug',
+            url: '/user/:id',
             controller: 'profileController',
             templateUrl: '/app/views/website/profile/user.html',
             css: '/app/views/website/profile/profile.css'

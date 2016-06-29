@@ -15,8 +15,8 @@ avBait.component('websiteMenu', {
             Popup.open('popup-login', 'authController', '');
         }
 
-        $scope.navigate = function (state) {
-            View.show(state);
+        $scope.navigate = function (state, params) {
+            View.show(state, params);
         }
 
         $scope.init = function () {

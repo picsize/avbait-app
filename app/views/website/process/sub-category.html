@@ -9,7 +9,7 @@
     <div class="container">
         <ul class="nav nav-tabs">
             <li class="tab-title" ng-repeat="category in models.subCategories track by $index" ng-class="{'active': $index == 0}">
-                <a data-toggle="tab" ng-click="showTab('#cat-'+$index)">{{category.Title}}</a>
+                <a data-toggle="tab" ng-click="$parent.showTab('#cat-'+$index)">{{category.Title}}</a>
             </li>
         </ul>
 
