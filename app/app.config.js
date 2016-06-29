@@ -91,6 +91,16 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             templateUrl: '/app/views/website/profile/user.html',
             css:'/app/views/website/profile/user.css'
         })
+        .state('website.private', {
+            url: '/אב-הבית-פרטי',
+            templateUrl: '/app/views/website/packages/private.html',
+            css: '/app/views/website/packages/private.css'
+        })
+        .state('website.office', {
+            url: '/אב-הבית-עסקים-ומשרדים',
+            templateUrl: '/app/views/website/packages/business.html',
+            css: '/app/views/website/packages/business.css'
+        })
 
     $logProvider.debugEnabled(true);
 

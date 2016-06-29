@@ -222,7 +222,7 @@ public class DB
     internal Category getCategoryBySlug(string slug)
     {
         SqlConnection con = Connect();
-        string commandText = string.Format("select * from category where Slug = N'{0}'",slug);
+        string commandText = string.Format("select * from category where Slug = N'{0}'", slug);
         SqlCommand cmd = CreateCommand(commandText, con);
         DataTable dt = Select(cmd);
         List<Category> categories = ConvertDataTable<Category>(dt);
@@ -230,10 +230,10 @@ public class DB
         return categories[0];
     }
 
-    internal int addBusiness(string email, string password, int userType, string fullName, string mobileNumber, string homeNumber, 
-        char familyStatus, char gender, string address, DateTime birthday, string image, string businessName, DateTime sundayStart, 
-        DateTime sundayEnd, DateTime mondayStart, DateTime mondayEnd, DateTime tuesdayStart, DateTime tuesdayEnd, DateTime wednesdayStart, 
-        DateTime wednesdayEnd, DateTime thursdayStart, DateTime thursdayEnd, DateTime fridayStart, DateTime fridayEnd, DateTime saturdayStart, 
+    internal int addBusiness(string email, string password, int userType, string fullName, string mobileNumber, string homeNumber,
+        char familyStatus, char gender, string address, DateTime birthday, string image, string businessName, DateTime sundayStart,
+        DateTime sundayEnd, DateTime mondayStart, DateTime mondayEnd, DateTime tuesdayStart, DateTime tuesdayEnd, DateTime wednesdayStart,
+        DateTime wednesdayEnd, DateTime thursdayStart, DateTime thursdayEnd, DateTime fridayStart, DateTime fridayEnd, DateTime saturdayStart,
         DateTime saturdayEnd)
     {
         try
@@ -242,12 +242,12 @@ public class DB
             string commandText = string.Format(@"exec addBusiness
                 N'{0}', N'{1}', {2}, N'{3}', N'{4}', N'{5}', N'{6}', N'{7}', N'{8}', N'{9}', N'{10}', 
                 N'{11}', N'{12}', N'{13}', N'{14}', N'{15}', N'{16}', N'{17}', N'{18}', N'{19}', N'{20}',
-                N'{21}', N'{22}', N'{23}', N'{24}', N'{25}'", 
+                N'{21}', N'{22}', N'{23}', N'{24}', N'{25}'",
                 email, password, userType, fullName, mobileNumber, homeNumber, familyStatus, gender, address, birthday.ToString("yyyy-MM-dd"), image,
-                businessName, sundayStart.ToString("HH:mm:ss"),  sundayEnd.ToString("HH:mm:ss"),  mondayStart.ToString("HH:mm:ss"),  mondayEnd.ToString("HH:mm:ss"),  
-                tuesdayStart.ToString("HH:mm:ss"),  tuesdayEnd.ToString("HH:mm:ss"),  wednesdayStart.ToString("HH:mm:ss"),
-                wednesdayEnd.ToString("HH:mm:ss"),  thursdayStart.ToString("HH:mm:ss"),  thursdayEnd.ToString("HH:mm:ss"),  fridayStart.ToString("HH:mm:ss"),  
-                fridayEnd.ToString("HH:mm:ss"),  saturdayStart.ToString("HH:mm:ss"), saturdayEnd.ToString("HH:mm:ss")
+                businessName, sundayStart.ToString("HH:mm:ss"), sundayEnd.ToString("HH:mm:ss"), mondayStart.ToString("HH:mm:ss"), mondayEnd.ToString("HH:mm:ss"),
+                tuesdayStart.ToString("HH:mm:ss"), tuesdayEnd.ToString("HH:mm:ss"), wednesdayStart.ToString("HH:mm:ss"),
+                wednesdayEnd.ToString("HH:mm:ss"), thursdayStart.ToString("HH:mm:ss"), thursdayEnd.ToString("HH:mm:ss"), fridayStart.ToString("HH:mm:ss"),
+                fridayEnd.ToString("HH:mm:ss"), saturdayStart.ToString("HH:mm:ss"), saturdayEnd.ToString("HH:mm:ss")
                 );
 
             SqlCommand cmd = CreateCommand(commandText, con);
@@ -259,6 +259,17 @@ public class DB
         {
             return 0;
         }
+    }
+
+    internal Page getPageBySlug(string slug)
+    {
+        SqlConnection con = Connect();
+        string commandText = string.Format("select * from page where Slug = N'{0}'", slug);
+        SqlCommand cmd = CreateCommand(commandText, con);
+        DataTable dt = Select(cmd);
+        List<Page> pages = ConvertDataTable<Page>(dt);
+
+        return pages[0];
     }
 
 }

@@ -25,6 +25,7 @@ public class api : System.Web.Services.WebService
     private readonly SubCategory _subCategory = new SubCategory();
     private readonly Order _order = new Order();
     private readonly Route _route = new Route();
+    private readonly Page _page = new Page();
     private readonly SmtpHandler _emailer = new SmtpHandler();
 
     public api()
@@ -270,6 +271,29 @@ public class api : System.Web.Services.WebService
 
             Dictionary<string, object> res = new Dictionary<string, object>();
             res.Add("state", num);
+            return convertToJson(res);
+        }
+        catch (Exception ex)
+        {
+            return createExceptionJson(ex);
+        }
+    }
+
+    [WebMethod]
+    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+    public string getPageBySlug(string slug)
+    {
+        try
+        {
+            Page thisPage = _page.getPageBySlug(slug);
+            Dictionary<string, object> res = new Dictionary<string, object>();
+            if (thisPage != null)
+            {
+                res.Add("state", 1);
+                res.Add("page", thisPage);
+            }
+            else res.Add("state", 0);
+
             return convertToJson(res);
         }
         catch (Exception ex)
