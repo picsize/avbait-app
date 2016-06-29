@@ -1,5 +1,5 @@
 ﻿
-avBait.controller('categoryController', function ($rootScope, $scope, $stateParams, Cookie, Popup, Server) {
+avBait.controller('categoryController', function ($rootScope, $scope, $stateParams, Cookie, Popup, Server, View) {
 
     $rootScope.steps = {
         firstStep: true,
@@ -46,6 +46,11 @@ avBait.controller('categoryController', function ($rootScope, $scope, $statePara
     $scope.saveCategory = function (sub) {
         Cookie.saveObject('subCategory', sub);
         Cookie.saveObject('category', $scope.models.category);
+        //if (models) {
+
+        //}
+        View.show('website.home.choose');
+        //ui-sref="website.home.choose"
     }
 
     $scope.init();

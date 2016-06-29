@@ -1,50 +1,50 @@
-﻿
-<div class="modal-header">
-    <h3 class="modal-title text-center center-block font-bold">הרשמה</h3>
-</div>
-<div class="modal-body">
-    <div class="row">
-        <div class="col-xs-12 col-lg-8 col-md-8 col-sm-8 center-block">
-            <form role="form">
+﻿<form role="form">
+    <div class="modal-header">
+        <h3 class="modal-title text-center center-block font-bold">הרשמה</h3>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-12 col-lg-8 col-md-8 col-sm-8 center-block">
+
                 <div class="row form-group">
-                    <label>דואר אלקטרוני</label>
-                    <input type="text" class="form-control" ng-model="models.email">
+                    <label class="required">דואר אלקטרוני</label>
+                    <input type="text" class="form-control text-left" ng-model="models.email" required>
                 </div>
 
                 <div class="row form-group">
-                    <label>סיסמא</label>
-                    <input type="text" class="form-control" ng-model="models.password">
+                    <label class="required">סיסמא</label>
+                    <input type="password" class="form-control" ng-model="models.password" required>
                 </div>
                 <div class="row form-group">
-                    <label>שם מלא</label>
-                    <input type="text" class="form-control" ng-model="models.fullName">
+                    <label class="required">שם מלא</label>
+                    <input type="text" class="form-control" ng-model="models.fullName" required>
                 </div>
 
                 <div class="row form-group">
-                    <label>טלפון נייד</label>
-                    <input type="text" class="form-control" ng-model="models.mobileNumber">
+                    <label class="required">טלפון נייד</label>
+                    <input type="text" class="form-control text-left" ng-model="models.mobileNumber" required>
                 </div>
                 <div class="row form-group">
-                    <label>כתובת</label>
-                    <input type="text" class="form-control" ng-model="models.address">
+                    <label class="required">כתובת</label>
+                    <input type="text" class="form-control" ng-model="models.address" required>
                 </div>
-            </form>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <div class="row">
+            <div class="col-xs-12 col-lg-6 col-md-6 col-sm-6 text-center">
+                <button type="submit" class="btn btn-default loginBtn" ng-click="registerUser()">התחברות</button>
+            </div>
+            <div class="col-xs-12 col-lg-6 col-md-6 col-sm-6 text-center">
+                <button type="button" class="btn btn-primary facebook-login" data-dismiss="modal">כניסה באמצעות פייסבוק</button>
+            </div>
         </div>
     </div>
 
-</div>
-<div class="modal-footer">
-    <div class="row">
-        <div class="col-xs-12 col-lg-6 col-md-6 col-sm-6 text-center">
-            <button type="button" class="btn btn-default loginBtn" ng-click="registerUser()">כניסה</button>
-        </div>
-        <div class="col-xs-12 col-lg-6 col-md-6 col-sm-6 text-center">
-            <button type="button" class="btn btn-default facebook-login" data-dismiss="modal">כניסה באמצעות פייסבוק</button>
-        </div>
-    </div>
-</div>
-
-
+</form>
 
 
 

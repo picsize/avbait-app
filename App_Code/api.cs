@@ -39,6 +39,14 @@ public class api : System.Web.Services.WebService
         return js.Serialize(obj);
     }
 
+    private string createExceptionJson(Exception ex)
+    {
+        Dictionary<string, object> res = new Dictionary<string, object>();
+        res.Add("state", 0);
+        res.Add("error", ex);
+        return convertToJson(res);
+    }
+
     [WebMethod]
     [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
     public string register(string email, string password, int userType, string fullName, string mobileNumber,
@@ -57,7 +65,7 @@ public class api : System.Web.Services.WebService
         }
         catch (Exception ex)
         {
-            return null;
+            return createExceptionJson(ex);
         }
     }
 
@@ -78,9 +86,9 @@ public class api : System.Web.Services.WebService
                 res.Add("state", 0);
             return convertToJson(res);
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            return null;
+            return createExceptionJson(ex);
         }
     }
 
@@ -112,7 +120,7 @@ public class api : System.Web.Services.WebService
         }
         catch (Exception ex)
         {
-            return null;
+            return createExceptionJson(ex);
         }
     }
 
@@ -148,7 +156,7 @@ public class api : System.Web.Services.WebService
         }
         catch (Exception ex)
         {
-            return null;
+            return createExceptionJson(ex);
         }
     }
 
@@ -184,7 +192,7 @@ public class api : System.Web.Services.WebService
         }
         catch (Exception ex)
         {
-            return null;
+            return createExceptionJson(ex);
         }
     }
 
@@ -199,10 +207,10 @@ public class api : System.Web.Services.WebService
     [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
     public string getRoute()
     {
+        Dictionary<string, object> res = new Dictionary<string, object>();
         try
         {
             List<Route> allRoutes = _route.getAllRoutes();
-            Dictionary<string, object> res = new Dictionary<string, object>();
             if (allRoutes != null)
             {
                 res.Add("state", 1);
@@ -213,9 +221,9 @@ public class api : System.Web.Services.WebService
 
             return convertToJson(res);
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            return null;
+            return createExceptionJson(ex);
         }
     }
 
@@ -236,9 +244,9 @@ public class api : System.Web.Services.WebService
 
             return convertToJson(res);
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            return null;
+            return createExceptionJson(ex);
         }
     }
 
@@ -264,9 +272,9 @@ public class api : System.Web.Services.WebService
             res.Add("state", num);
             return convertToJson(res);
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            return null;
+            return createExceptionJson(ex);
         }
     }
 

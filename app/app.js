@@ -18,6 +18,11 @@ avBait.run(function (Server, $rootScope) {
         $rootScope.routing = JSON.parse(res.d).routes;
     })
     .error(function (res) { })
+
+    $rootScope.checkText = function (id) {
+        elem = angular.element(id);
+        (elem.val() != '') ? elem.addClass('has-text') : elem.removeClass('has-text');
+    }
 });
 
 

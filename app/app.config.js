@@ -18,7 +18,8 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
         .state('website.home.category', {
             url: '/',
             controller: 'mainController',
-            templateUrl: '/app/views/website/category/main.html',
+            css: '/app/views/website/process/category.css',
+            templateUrl: '/app/views/website/process/main.html'
         })
         //.state('website.home.slug', {
         //    url: '/:slug',
@@ -64,17 +65,30 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
         .state('website.home.subCategories', {
             url: '/category/:slug',
             controller: 'categoryController',
-            templateUrl: '/app/views/website/category/sub-category.html',
+            templateUrl: '/app/views/website/process/sub-category.html',
         })
         .state('website.home.choose', {
             url: '/choose',
+            controller: function ($rootScope) {
+                $rootScope.steps = {
+                    firstStep: false,
+                    secondStep: true,
+                    lastStep: false
+                };
+            },
+            templateUrl: '/app/views/website/process/process-choose.html',
+            css: '/app/views/website/process/process-choose.css'
+        })
+        .state('website.home.order-120', {
+            url: '/order-120',
             //controller: 'categoryController',
-            templateUrl: '/app/views/website/category/category-choose.html',
+            templateUrl: '/app/views/website/process/order-120.html'
         })
         .state('website.home.rating', {
             url: '/rating',
-            //controller: 'category',
-            templateUrl: '/app/views/website/rating/rating-sub-category.html',
+            //controller: 'ratingController',
+            templateUrl: '/app/views/website/process/process-rating.html',
+            css: '/app/views/website/process/process-rating.css'
         })
         .state('website.business', {
             url: '/business',

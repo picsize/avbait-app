@@ -9,10 +9,10 @@
         </div>
         <div class="col-xs-9 col-lg-9 col-md-9 col-sm-9 text-left login-buttons">
 
-            <button type="button" class="signInBTN" ng-click="login()" data-target="#sign-in">התחברות</button>
-            <button type="button" class="signInBTN" ng-click="register()" data-target="#register">הרשמה</button>
-            <button type="button" class="join">בעל מקצוע הצטרף אלינו</button>
-
+            <button type="button" class="signInBTN" ng-click="login()" data-target="#sign-in" ng-show="!models.showWelcome">התחברות</button>
+            <button type="button" class="signInBTN" ng-click="register()" data-target="#register" ng-show="!models.showWelcome">הרשמה</button>
+            <button type="button" class="join" ng-show="!models.showWelcome">בעל מקצוע הצטרף אלינו</button>
+            <button type="button" class="join" ng-show="models.showWelcome">שלום {{models.user.FullName}} | פרופיל</button>
         </div>
     </div>
     <div class="row">
