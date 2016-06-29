@@ -46,7 +46,15 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
         })
         .state('website.home.rating', {
             url: '/קטגוריה/:slug/דירוגים',
-            //controller: 'ratingController',
+            controller: function ($scope) {
+                $scope.getStars = function (rating) {
+                    // Get the value
+                    var val = parseFloat(rating);
+                    // Turn value into number/100
+                    var size = val / 5 * 100;
+                    return size + '%';
+                }
+            },
             templateUrl: '/app/views/website/process/process-rating.html',
             css: '/app/views/website/process/process-rating.css'
         })
