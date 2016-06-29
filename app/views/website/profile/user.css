@@ -1,5 +1,5 @@
 ﻿
-.profile-details {
+.user-details {
     margin-bottom: 5rem;
     background-color: #f9f9f9;
     height: 8rem;
@@ -8,9 +8,8 @@
 
 
 
-.profileImg {
+.userImg {
     width: 100%;
-
     border: 5px solid #fff;
     height: 17rem;
 
@@ -18,36 +17,36 @@
 
 
 
-#profile .col-xs-2
+#user .col-xs-2
 {
     padding: 0;
 }
 
-#profile .nav-tabs > li.active > a, #profile .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover
+#user .nav-tabs > li.active > a, #user .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover
 {
     border: 1px solid #cacaca;
 }
 
-#profile .tabs-right > li.active > a, #profile .tabs-right > li.active > a:hover, #profile .tabs-right > li.active > a:focus
+#user .tabs-right > li.active > a, #user .tabs-right > li.active > a:hover, #user .tabs-right > li.active > a:focus
 {
 border:none;
 background-color:#f9f9f9;
 
 }
 
-#profile .tabs-right > li > a
+#user .tabs-right > li > a
 {
     border-radius:2px !important;
     text-align:right;
         border-bottom: 1px dashed #cacaca;
 }
 
-#profile .tabs-right
+#user .tabs-right
 {
     border:none;
 }
 
-#profile .save
+#user .save
 {
     background-color:#ff6a00;
     padding:0.5rem 7rem;
