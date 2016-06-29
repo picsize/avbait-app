@@ -5,7 +5,13 @@
     box-shadow: none;
     outline: none;
     margin: 2rem auto;
-    padding: 0.5rem 1rem 0.5rem 9rem;
+    padding: 0.5rem 1rem 0.5rem 9rem; 
+    text-indent:1rem;
 
 }
 
+.location-icon
+{
+    position:relative;
+    right:2rem;
+}
