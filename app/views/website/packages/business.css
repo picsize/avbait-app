@@ -27,11 +27,17 @@
 
 #business-contact
 {
-    margin-top: 7rem;
+    margin-top: 1rem;
     margin-bottom: 7.4rem;
     background-color: rgba(255, 255, 255, 0.92);
-    height: 35rem;
+    height: 42rem;
 }
+
+
+    #business-contact .form-group
+    {
+            padding: 2rem 1rem 0 0.5rem;
+    }
 
 
     #business-contact img
