@@ -21,11 +21,11 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             css: '/app/views/website/process/category.css',
             templateUrl: '/app/views/website/process/main.html'
         })
-        //.state('website.page', {
-        //    url: '/:slug',
-        //    controller: 'pageController',
-        //    templateUrl: '/app/views/website/pages/main.html'
-        //})
+        .state('website.page', {
+            url: '/:slug',
+            controller: 'pageController',
+            templateUrl: '/app/views/website/pages/main.html'
+        })
         //.state('website.home.slug', {
         //    url: '/:slug',
         //    templateProvider: ['type', '$templateRequest',
@@ -74,7 +74,7 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             css: '/app/views/website/process/sub-category.css'
         })
         .state('website.home.choose', {
-            url: '/choose',
+            url: '/category/:slug/choose',
             controller: function ($rootScope) {
                 $rootScope.steps = {
                     firstStep: false,
@@ -86,12 +86,12 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             css: '/app/views/website/process/process-choose.css'
         })
         .state('website.home.order-120', {
-            url: '/order-120',
+            url: '/category/:slug/order-120',
             //controller: 'categoryController',
             templateUrl: '/app/views/website/process/order-120.html'
         })
         .state('website.home.rating', {
-            url: '/rating',
+            url: '/category/:slug/rating',
             //controller: 'ratingController',
             templateUrl: '/app/views/website/process/process-rating.html',
             css: '/app/views/website/process/process-rating.css'
