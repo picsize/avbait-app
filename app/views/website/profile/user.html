@@ -27,41 +27,66 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="home-p">
                         <form role="form">
-                           <div class="col-xs-12">
-                               <div class="row form-group placeholder-label">
-                                   <input id="fullname" type="text" class="form-control" ng-model="models.user.FullName" required>
-                                   <label for="fullname" class="required">שם מלא</label>
-                               </div>
-                               <div class="row form-group placeholder-label">
-                                   <input id="address" type="text" class="form-control" ng-model="models.user.Address" required>
-                                   <label for="address" class="required">כתובת</label>
-                               </div>
-                               <div class="row form-group placeholder-label">
-                                   <input id="mobile" type="text" class="form-control" ng-model="models.user.MobileNumber" required>
-                                   <label for="mobile" class="required">נייד</label>
-                               </div>
-                               <div class="row form-group placeholder-label">
-                                   <input id="home" type="text" class="form-control" ng-model="models.user.HomeNumber">
-                                   <label for="home">טלפון נוסף</label>
-                               </div>
-                               <div class="row form-group placeholder-label">
-                                   <input id="dob" type="date" class="form-control" ng-model="models.user.Birthday">
-                                   <label for="dob">תאריך לידה</label>
-                               </div>
-                               <div class="row form-group">
-                                   <label for="gender">מגדר</label>
-                                   <div class="btn-group" role="group" aria-label="gender">
-                                       <button type="button" class="btn btn-default" ng-class="{'active':models.user.GenderString == 'ז'}" ng-click="(models.user.Gender = 'M')">זכר</button>
-                                       <button type="button" class="btn btn-default" ng-class="{'active':models.user.GenderString == 'נ'}" ng-click="(models.user.Gender = 'F')">נקבה</button>
-                                   </div>
-                               </div>
-                               
-                           </div>
+                            <div class="col-xs-12">
+                                <div class="row form-group placeholder-label">
+                                    <input id="fullname" type="text" class="form-control" ng-model="models.user.FullName" required>
+                                    <label for="fullname" class="required">שם מלא</label>
+                                </div>
+                                <div class="row form-group placeholder-label">
+                                    <input id="address" type="text" class="form-control" ng-model="models.user.Address" required>
+                                    <label for="address" class="required">כתובת</label>
+                                </div>
+                                <div class="row form-group placeholder-label">
+                                    <input id="mobile" type="text" class="form-control" ng-model="models.user.MobileNumber" required>
+                                    <label for="mobile" class="required">נייד</label>
+                                </div>
+                                <div class="row form-group placeholder-label">
+                                    <input id="home" type="text" class="form-control" ng-model="models.user.HomeNumber">
+                                    <label for="home">טלפון נוסף</label>
+                                </div>
+                                <div class="row form-group placeholder-label">
+                                    <input id="dob" type="date" class="form-control" ng-model="models.user.Birthday">
+                                    <label for="dob">תאריך לידה</label>
+                                </div>
+                                <div class="row form-group">
+                                    <label for="gender">מגדר</label>
+                                    <div class="btn-group" role="group" aria-label="gender">
+                                        <button type="button" class="btn btn-default" ng-class="{'active':models.user.Gender == 'M'}" ng-click="models.user.Gender = 'M'">זכר</button>
+                                        <button type="button" class="btn btn-default" ng-class="{'active':models.user.Gender == 'F'}" ng-click="models.user.Gender = 'F'">נקבה</button>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label for="gender">מגדר</label>
+                                    <div class="btn-group" role="group" aria-label="gender">
+                                        <button type="button" class="btn btn-default" ng-class="{'active':models.user.FamilyStatus == 'S'}" ng-click="models.user.FamilyStatus = 'S'">רווק/ה</button>
+                                        <button type="button" class="btn btn-default" ng-class="{'active':models.user.FamilyStatus == 'M'}" ng-click="models.user.FamilyStatus = 'M'">נשוי/ה</button>
+                                        <button type="button" class="btn btn-default" ng-class="{'active':models.user.FamilyStatus == 'D'}" ng-click="models.user.FamilyStatus = 'D'">גרוש/ה</button>
+                                        <button type="button" class="btn btn-default" ng-class="{'active':models.user.FamilyStatus == 'W'}" ng-click="models.user.FamilyStatus = 'W'">אלמן/ה</button>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </div>
-                    <div class="tab-pane" id="login-p">Profile Tab.</div>
-                    <div class="tab-pane" id="orders-p">Messages Tab.</div>
-                    <div class="tab-pane" id="comments-p">Settings Tab.</div>
+                    <div class="tab-pane" id="login-p">
+                        <form role="form">
+                            <div class="col-xs-12">
+                                <div class="row form-group placeholder-label">
+                                    <input id="email" type="text" class="form-control" ng-model="models.user.Email" required>
+                                    <label for="email" class="required">אימייל</label>
+                                </div>
+                                <div class="row form-group placeholder-label">
+                                    <input id="pass" type="password" class="form-control" ng-model="models.user.Password" required>
+                                    <label for="pass" class="required">סיסמה</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="orders-p">
+                        <h3>ההזמנות שלי</h3>
+                    </div>
+                    <div class="tab-pane" id="comments-p">
+                        <h3>חוות דעת</h3>
+                    </div>
                 </div>
             </div>
 

@@ -14,8 +14,29 @@ avBait.controller('profileController', function ($scope, $stateParams, Cookie, P
             case 'נ': { $scope.models.user.Gender = 'F'; } break;
             default: { } break;
         }
+        switch ($scope.models.user.FamilyStatusString) {
+            case ('רווק' || 'רווקה'): {
+                $scope.models.user.FamilyStatus = 'S';
+            } break;
+            case ('נשוי' || 'נשואה'): {
+                $scope.models.user.FamilyStatus = 'M';
+            } break;
+            case ('גרוש' || 'גרושה'): {
+                $scope.models.user.FamilyStatus = 'D';
+            } break;
+            case ('אלמן' || 'אלמנה'): {
+                $scope.models.user.FamilyStatus = 'W';
+            } break;
+            default: { } break;
+
+        }
     }
-    
+
+    //$scope.setGender = function (gender) {
+    //    $scope.models.user.Gender = gender;
+    //    $scope.models.user.GenderString = (gender == 'M') ? 'ז' : 'נ';
+    //}
+
 
     $scope.init();
 
