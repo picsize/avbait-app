@@ -163,51 +163,77 @@
     }
 
 
-.member
+
+    .member .thumbnail
+    {
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background-color: #eeeeee;
+        height: 11rem;
+        padding: 0;
+    }
+
+        .member .thumbnail > div:not(:last-child)
+        {
+            border-left: 1px solid #fff;
+            height:60%;
+            margin-top:2rem;
+        }
+
+.thumbnail .img-name img
 {
+    width: 20%;
+    margin-left: 2rem;
+    margin-top: -1rem;
 }
 
-.thumbnail
+
+
+
+.thumbnail .place
 {
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    background-color: #eeeeee;
-    height: 11rem;
+    margin-top: 1.5rem;
+}
+
+.thumbnail .rating p
+{
+    margin-bottom: 1.6rem;
+}
+
+.thumbnail .rating h3
+{
+    margin: 0;
+}
+
+.thumbnail .time img
+{
+    width: 48%;
+    margin-top: 0.5rem;
+}
+
+
+.vertical-btn
+{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: #ff681f;
+    vertical-align: middle;
+    padding-top: 4rem;
 }
 
 
 
-    .thumbnail .img-name img
+
+    .vertical-btn a
     {
-        width: 25%;
-        margin-left: 2rem;
-        margin-top: 1rem;
+        color: #fff;
+        vertical-align: middle;
     }
 
-
-    .thumbnail .img-name h3
-    {
-        margin-top: 3.5rem;
-    }
-
-    .thumbnail .place
-    {
-        margin-top: 2.5rem;
-    }
-
-    .thumbnail .rating p
-    {
-        margin-bottom: 1.6rem;
-    }
-
-    .thumbnail .rating h3
-    {
-        margin: 0;
-    }
-
-    .thumbnail .time img
-    {
-        width: 60%;
-        margin-top: 0.5rem;
-    }
+        .vertical-btn a:hover
+        {
+            text-decoration: none;
+            color: #000;
+        }
