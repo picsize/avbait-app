@@ -12,15 +12,19 @@ avBait.controller('mainController', function ($rootScope, $scope, $stateParams, 
     }
 
     $scope.init = function () {
-        Server.post('getCategories')
-        .success(function (res) {
-            $scope.models.categories = JSON.parse(res.d).categories;
-            //console.log($scope.models);
-            $scope.getSubCategories();
-        })
-        .error(function (res) {
-            console.log(res)
-        })
+        try {
+            Server.post('getCategories')
+            .success(function (res) {
+                $scope.models.categories = JSON.parse(res.d).categories;
+                //console.log($scope.models);
+                $scope.getSubCategories();
+            })
+            .error(function (res) {
+                console.log(res)
+            })
+        } catch (e) {
+
+        }
     }
 
     $scope.getSubCategories = function () {

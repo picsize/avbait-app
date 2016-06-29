@@ -21,6 +21,11 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             css: '/app/views/website/process/category.css',
             templateUrl: '/app/views/website/process/main.html'
         })
+        .state('website.page', {
+            url: '/:slug',
+            controller: 'pageController',
+            templateUrl: '/app/views/website/pages/main.html'
+        })
         //.state('website.home.slug', {
         //    url: '/:slug',
         //    templateProvider: ['type', '$templateRequest',

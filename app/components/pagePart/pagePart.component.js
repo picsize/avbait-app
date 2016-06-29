@@ -2,12 +2,13 @@
 avBait.component('pagePart', {
     templateUrl: '/app/components/pagePart/pagePart.component.html',
     bindings: {
-        part: '=',
-        onDelete: '&',
-        onUpdate: '&'
+        part: '='
     },
-    controller: function () {
-        debugger;
-        this.user = { name: 'world' };
+    controller: function ($scope) {
+        $scope.models = {
+            html: this.part.html,
+            css: this.part.css,
+            js: this.part.js
+        }
     }
 });
