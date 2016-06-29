@@ -8,11 +8,11 @@ avBait.component('websiteMenu', {
         }
 
         $scope.register = function () {
-            Popup.open('popup-register', 'registerAndLogin', '');
+            Popup.open('popup-register', 'authController', '');
         }
 
         $scope.login = function () {
-            Popup.open('popup-login', 'registerAndLogin', '');
+            Popup.open('popup-login', 'authController', '');
         }
 
         $scope.navigate = function (state) {

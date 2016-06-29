@@ -26,7 +26,7 @@ avBait.run(function (Server, $rootScope) {
     .error(function (res) { })
 
     setInterval(function () {
-        angular.element('.placeholder-label input').each(function (index) {
+        angular.element('.placeholder-label input, .placeholder-label textarea').each(function (index) {
             elem = angular.element(this);
             (elem.val() != '') ? elem.addClass('has-text') : elem.removeClass('has-text');
         });

@@ -1,5 +1,5 @@
 ﻿
-avBait.controller('registerAndLogin', function ($rootScope, $scope, $uibModalInstance, data, Server, Cookie) {
+avBait.controller('authController', function ($rootScope, $scope, $uibModalInstance, data, Server, Cookie) {
 
     $scope.models = {
         email: '',

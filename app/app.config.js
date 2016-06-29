@@ -41,19 +41,14 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
         })
         .state('website.home.order-120', {
             url: '/קטגוריה/:slug/תוך-120-דקות',
-            //controller: 'categoryController',
-            templateUrl: '/app/views/website/process/order-120.html'
+            templateUrl: '/app/views/website/process/order-120.html',
+            data: { pageTitle: 'הזמנת בעל מקצוע תוך 120 דקות' }
         })
         .state('website.home.rating', {
             url: '/קטגוריה/:slug/דירוגים',
             //controller: 'ratingController',
             templateUrl: '/app/views/website/process/process-rating.html',
             css: '/app/views/website/process/process-rating.css'
-        })
-        .state('website.business', {
-            url: '/business',
-            //controller: 'category',
-            templateUrl: '/app/views/website/handyman.html',
         })
         .state('website.page', {
             url: 'מאמרים/:slug',
@@ -83,6 +78,18 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
         .state('website.why', {
             url: '/למה-זה-כדאי',
             templateUrl: '/app/views/website/pages/why.html'
+        })
+        .state('website.business', {
+            url: '/business/:slug',
+            controller: 'profileController',
+            templateUrl: '/app/views/website/profile/business.html',
+            css: '/app/views/website/profile/profile.css'
+        })
+        .state('website.user', {
+            url: '/user/:slug',
+            controller: 'profileController',
+            templateUrl: '/app/views/website/profile/user.html',
+            css: '/app/views/website/profile/profile.css'
         })
 
     $logProvider.debugEnabled(true);
