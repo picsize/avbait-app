@@ -1,13 +1,11 @@
 ﻿
 avBait.component('websiteMenu', {
     templateUrl: 'app/components/menu/menu.component.html',
-    controller: function ($rootScope, $scope, Popup, Cookie) {
+    controller: function ($rootScope, $scope, Popup, Cookie,View) {
         $scope.models = {
             user: {},
             showWelcome: false
         }
-        
-        
 
         $scope.register = function () {
             Popup.open('popup-register', 'registerAndLogin', '');
@@ -15,6 +13,10 @@ avBait.component('websiteMenu', {
 
         $scope.login = function () {
             Popup.open('popup-login', 'registerAndLogin', '');
+        }
+
+        $scope.navigate = function (state) {
+            View.show(state);
         }
 
         $scope.init = function () {
