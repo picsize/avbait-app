@@ -170,7 +170,12 @@ div.text-container
     background-image: -webkit-linear-gradient(bottom, #f8f8f8 0%, #f3f3f3 55.35%, #ebebeb 100%);
     background-image: linear-gradient(bottom, #f8f8f8 0%, #f3f3f3 55.35%, #ebebeb 100%);
     border-left: 1px solid #b8bbc1;
-    background-color: #b7bbc1;   box-shadow: inset 0 -4px 5px rgba(210, 210, 210, 0.44);   margin-top: 4rem;
+    background-color: #b7bbc1;
+   box-shadow: inset 0 -4px 5px rgba(210, 210, 210, 0.44);
+   margin-top: 4rem;
+
+
+
 }
 
 .tab-title.active

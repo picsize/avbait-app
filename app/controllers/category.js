@@ -39,6 +39,11 @@ avBait.controller('categoryController', function ($rootScope, $scope, $statePara
        })
     }
 
+    $scope.showTab = function (id) {
+        angular.element('.tab-pane').removeClass('in active');
+        angular.element(id).addClass('in active');
+    }
+
     $scope.setCategoryCookie = function (category) {
         Cookie.saveObject('category', category);
     }

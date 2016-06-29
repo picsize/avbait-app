@@ -9,15 +9,13 @@
     <div class="container">
         <ul class="nav nav-tabs">
             <li class="tab-title" ng-repeat="category in models.subCategories track by $index" ng-class="{'active': $index == 0}">
-                <a data-toggle="tab" href="#cat-{{$index}}">{{category.Title}}</a>
+                <a data-toggle="tab" ng-click="showTab('#cat-'+$index)">{{category.Title}}</a>
             </li>
         </ul>
 
         <div class="tab-content tab-sub color-blue">
             <div class="tab-pane fade" ng-repeat="category in models.subCategories track by $index" ng-class="{'in active': $index == 0}" id="cat-{{$index}}">
-              
                    <a ng-repeat="sub in category.SubCategory track by $index" ng-click="saveCategory(sub)">{{sub.Name}}</a>
-
             </div>
         </div>
     </div>
