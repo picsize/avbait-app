@@ -147,15 +147,19 @@ div.text-container
     min-height: 21rem;
 }
 
-    .tab-sub a
-    {
-            padding: 1rem 3rem 0 0;
-    }
+
 
     .tab-sub > div
     {
-        padding-top:3rem;
+        padding:3rem 1rem;
     }
+
+        .tab-sub > div a
+        {
+            padding-left:4rem;
+            font-size:1.4rem;
+            color:#2C4B6A;
+        }
 
 
 .tab-title

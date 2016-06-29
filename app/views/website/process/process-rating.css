@@ -1,7 +1,7 @@
 ﻿
-.rating-sub-category .results
+.rating-sub-category .results, .member
 {
-    padding-left: 0;
+    padding: 0;
 }
 
 
@@ -178,22 +178,34 @@
         {
             border-left: 1px solid #fff;
             height:60%;
-            margin-top:2rem;
+            margin-top:1.7rem;
         }
+
+.thumbnail label
+{
+    font-size:13px;
+}
+
+.thumbnail .img-name h3
+{
+    margin-top:3rem;
+}
 
 .thumbnail .img-name img
 {
-    width: 20%;
+    width: 22%;
     margin-left: 2rem;
-    margin-top: -1rem;
+    margin-top: 0rem;
 }
 
-
-
+.thumbnail .content-rating
+{
+    margin-top:0.7rem;
+}
 
 .thumbnail .place
 {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .thumbnail .rating p
@@ -201,15 +213,19 @@
     margin-bottom: 1.6rem;
 }
 
-.thumbnail .rating h3
-{
-    margin: 0;
-}
 
 .thumbnail .time img
 {
-    width: 48%;
-    margin-top: 0.5rem;
+    width: 42%;
+    margin: 1rem 1.4rem 0;
+    display: block;
+}
+
+.thumbnail .phone img
+{
+    margin: 0.8rem 6.5rem 0;
+    display: block;
+    width: 15%;
 }
 
 
