@@ -66,6 +66,7 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             url: '/category/:slug',
             controller: 'categoryController',
             templateUrl: '/app/views/website/process/sub-category.html',
+            css: '/app/views/website/process/sub-category.css'
         })
         .state('website.home.choose', {
             url: '/choose',
