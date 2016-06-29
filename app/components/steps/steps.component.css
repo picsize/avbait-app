@@ -31,16 +31,16 @@
 
 #steps img
 {
-    width: 53rem;
+    width: 77rem;
     position: absolute;
-    bottom: -90rem;
+    bottom: -76rem;
     display:none;
 }
 
 #steps h2
 {
     margin-top:10rem;
-    font-size:60px;
+    font-size:30px;
 }
 
 

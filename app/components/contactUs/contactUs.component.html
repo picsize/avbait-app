@@ -9,26 +9,41 @@
                     <form role="form" ng-submit="send()">
                         <h2>צרו קשר</h2>
                         <div class="col-xs-12 col-lg-6 col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="שם מלא" ng-model="models.fullName">
+
+                            <div class="row form-group placeholder-label">
+                                <input id="fullname" type="text" class="form-control" ng-model="models.fullName">
+                                <label for="fullname" class="required">שם מלא</label>
                             </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="דואר אלקטרוני" ng-model="models.email">
+
+
+                            <div class="row form-group placeholder-label">
+                                <input id="email" type="email" class="form-control"  ng-model="models.email">
+                                <label for="email" class="required">דואר אלקטרוני</label>
                             </div>
                         </div>
 
                         <div class="col-xs-12 col-lg-6 col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <input type="tel" class="form-control" placeholder="טלפון" ng-model="models.phone">
+
+                            <div class="row form-group placeholder-label">
+                                <input id="tel" type="tel" class="form-control"  ng-model="models.phone">
+                                <label for="tel" class="required">טלפון</label>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="נושא" ng-model="models.subject">
+
+                            <div class="row form-group placeholder-label">
+                                <input id="subject" type="text" class="form-control" ng-model="models.subject">
+                                <label for="subject" class="required">נושא</label>
                             </div>
+
+                           
                         </div>
                         <div class="col-xs-12">
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="הודעה" ng-model="models.msg"></textarea>
+
+                            <div class="row form-group placeholder-label">
+                                <textarea id="textarea" class="form-control" ng-model="models.msg"></textarea>
+                                <label for="textarea" class="required">הודעה</label>
                             </div>
+
+
                         </div>
 
                         <div class="col-xs-12">

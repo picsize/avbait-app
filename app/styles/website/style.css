@@ -145,11 +145,12 @@ p {
     position: relative;
     bottom: 2.5rem;
     color:#254460;
-    font-size: 1.5rem !important;
+    font-size: 1.4rem !important;
     -moz-transition: all ease-in 0.2s;
     -o-transition: all ease-in 0.2s;
     -webkit-transition: all ease-in 0.2s;
     transition: all ease-in 0.2s;
+    font-weight:normal;
 }
 
 .placeholder-label input {
@@ -245,4 +246,9 @@ p {
         width: 20%;
         float: right;
     }
+}
+
+.modal-header
+{
+    margin-bottom:1rem;
 }

@@ -6,28 +6,32 @@
         <div class="row">
             <div class="col-xs-12 col-lg-8 col-md-8 col-sm-8 center-block">
 
-                <div class="row form-group">
-                    <label class="required">דואר אלקטרוני</label>
-                    <input type="text" class="form-control text-left" ng-model="models.email" required>
+                <div class="row form-group placeholder-label">
+                    <input id="email" type="text" class="form-control text-left" ng-model="models.email" required>
+                    <label for="email" class="required">דואר אלקטרוני</label>
                 </div>
 
-                <div class="row form-group">
-                    <label class="required">סיסמא</label>
-                    <input type="password" class="form-control" ng-model="models.password" required>
-                </div>
-                <div class="row form-group">
-                    <label class="required">שם מלא</label>
-                    <input type="text" class="form-control" ng-model="models.fullName" required>
+                <div class="row form-group placeholder-label">
+                    <input id="pass" type="password" class="form-control" ng-model="models.password" required>
+                    <label for="pass" class="required">סיסמא</label>
                 </div>
 
-                <div class="row form-group">
-                    <label class="required">טלפון נייד</label>
-                    <input type="text" class="form-control text-left" ng-model="models.mobileNumber" required>
+                <div class="row form-group placeholder-label">
+                    <input id="fullname" type="text" class="form-control" ng-model="models.fullName" required>
+                    <label for="fullname" class="required">שם מלא</label>
                 </div>
-                <div class="row form-group">
-                    <label class="required">כתובת</label>
-                    <input type="text" class="form-control" ng-model="models.address" required>
+               
+                <div class="row form-group placeholder-label">
+                    <input id="phone" type="text" class="form-control text-left" ng-model="models.mobileNumber" required>
+                    <label for="phone" class="required">טלפון נייד</label>
                 </div>
+
+                <div class="row form-group placeholder-label">
+                    <input id="address" type="text" class="form-control" ng-model="models.address" required>
+                    <label for="address" class="required">כתובת</label>
+                </div>
+
+
 
             </div>
         </div>

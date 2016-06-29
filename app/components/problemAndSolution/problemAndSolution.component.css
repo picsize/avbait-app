@@ -1,7 +1,6 @@
 ﻿
 #problem-solution
 {
-    height: 78rem;
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -29,24 +28,17 @@
 #solution
 {
     background: url('/content/images/solutionBG.png') no-repeat;
-    height: 39rem;
+
 }
 
-.solution
-{
-    margin-top: 7rem;
-}
 
-    .solution:after
+
+    .solution h2
     {
-        content: "הפתרון";
+
         font-size: 20rem;
-        color: #fff;
-        font-family: OpenSansHebrew-Bold;
-        position: relative;
-        bottom: 14rem;
-        right: 105rem;
-        top: -11rem;
+
+
     }
 
 #scroll

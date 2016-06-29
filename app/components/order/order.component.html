@@ -24,14 +24,14 @@
                         <label for="email">דואר אלקטרוני</label>
                     </div>
 
-                    <div class="row form-group placeholder-label">
+                    <div class="row form-group placeholder-label" id="phone">
                         <input type="text" class="form-control">
-                        <label>טלפון</label>
+                        <label for="phone">טלפון</label>
                     </div>
 
                     <div class="row form-group placeholder-label">
-                        <input type="text" class="form-control">
-                        <label>כתובת</label>
+                        <input id="address" type="text" class="form-control">
+                        <label for="address">כתובת</label>
                     </div>
                 </div>
 
@@ -43,10 +43,13 @@
                         </div>
                     </div>
 
-                    <div class="row form-group" id="different-address-input" ng-show="models.isDifferentAddress">
-                        <input type="text" class="form-control">
-                        <label>כתובת</label>
+
+                    <div class="row form-group placeholder-label" id="different-address-input" ng-show="models.isDifferentAddress">
+                        <input id="address" type="text" class="form-control">
+                        <label for="address">כתובת</label>
                     </div>
+
+
                 </div>
             </div>
 
@@ -142,7 +145,7 @@
 
             <div class="row">
                 <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12 center-block text-center">
-                    <img class="confirmOrder" src="/content/images/orderConfirmBTN.png" />
+                    <button class="confirmOrder">הזמנה</button>
                 </div>
 
             </div>
