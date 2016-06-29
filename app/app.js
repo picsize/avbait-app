@@ -12,6 +12,12 @@ var avBait = angular.module('avBait',
         'angular-loading-bar'
     ]);
 
+avBait.filter('to_trusted', ['$sce', function($sce){
+    return function(text) {
+        return $sce.trustAsHtml(text);
+    };
+}]);
+
 avBait.run(function (Server, $rootScope) {
     Server.post('getRoute')
     .success(function (res) {
