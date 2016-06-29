@@ -15,13 +15,6 @@ avBait.component('order', {
             firstStep: false,
             secondStep: false,
             lastStep: true
-        };
-
-        //$rootScope.checkText = function (id) {
-        //    debugger;
-        //    elem = angular.element(id);
-        //    return (elem.val != '') ? true : false;
-        //}
-        
+        };        
     }
 });

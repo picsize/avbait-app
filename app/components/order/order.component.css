@@ -80,48 +80,4 @@
     text-indent: 1rem;
 }
 
-.placeholder-label label {
-    position: relative;
-    bottom: 2.5rem;
-    color:#254460;
-    font-size: 1.5rem !important;
-    -moz-transition: all ease-in 0.2s;
-    -o-transition: all ease-in 0.2s;
-    -webkit-transition: all ease-in 0.2s;
-    transition: all ease-in 0.2s;
-}
 
-.placeholder-label input {
-    margin-top: 0;
-    -moz-transition: all ease-in 0.2s;
-    -o-transition: all ease-in 0.2s;
-    -webkit-transition: all ease-in 0.2s;
-    transition: all ease-in 0.2s;
-}
-
-.placeholder-label input:focus + label {
-    bottom: 5rem;
-    opacity:1 !important;
-    color: #91bdf5;
-    font-size:1.3rem !important;
-    -moz-transition: all ease-in 0.2s;
-    -o-transition: all ease-in 0.2s;
-    -webkit-transition: all ease-in 0.2s;
-    transition: all ease-in 0.2s;
-}
-
-    .placeholder-label input.has-text + label {
-        opacity:0;
-        -moz-transition: all ease-in 0.2s;
-        -o-transition: all ease-in 0.2s;
-        -webkit-transition: all ease-in 0.2s;
-        transition: all ease-in 0.2s;
-    }
-
-.placeholder-label input:focus {
-    -moz-transition: all ease-in 0.2s;
-    -o-transition: all ease-in 0.2s;
-    -webkit-transition: all ease-in 0.2s;
-    transition: all ease-in 0.2s;
-    color:#254460;
-}

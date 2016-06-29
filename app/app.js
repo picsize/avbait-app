@@ -25,10 +25,13 @@ avBait.run(function (Server, $rootScope) {
     })
     .error(function (res) { })
 
-    $rootScope.checkText = function (id) {
-        elem = angular.element(id);
-        (elem.val() != '') ? elem.addClass('has-text') : elem.removeClass('has-text');
-    }
+    setInterval(function () {
+        angular.element('.placeholder-label input').each(function (index) {
+            elem = angular.element(this);
+            (elem.val() != '') ? elem.addClass('has-text') : elem.removeClass('has-text');
+        });
+    }, 1000 * 0.5);
+    
 });
 
 

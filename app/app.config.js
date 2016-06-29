@@ -22,13 +22,13 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             templateUrl: '/app/views/website/process/main.html'
         })
         .state('website.home.subCategories', {
-            url: '/category/:slug',
+            url: '/קטגוריה/:slug',
             controller: 'categoryController',
             templateUrl: '/app/views/website/process/sub-category.html',
             css: '/app/views/website/process/sub-category.css'
         })
         .state('website.home.choose', {
-            url: '/category/:slug/choose',
+            url: '/קטגוריה/:slug/בחירת-מסלול',
             controller: function ($rootScope) {
                 $rootScope.steps = {
                     firstStep: false,
@@ -40,12 +40,12 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             css: '/app/views/website/process/process-choose.css'
         })
         .state('website.home.order-120', {
-            url: '/category/:slug/order-120',
+            url: '/קטגוריה/:slug/תוך-120-דקות',
             //controller: 'categoryController',
             templateUrl: '/app/views/website/process/order-120.html'
         })
         .state('website.home.rating', {
-            url: '/category/:slug/rating',
+            url: '/קטגוריה/:slug/דירוגים',
             //controller: 'ratingController',
             templateUrl: '/app/views/website/process/process-rating.html',
             css: '/app/views/website/process/process-rating.css'
