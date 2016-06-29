@@ -5,9 +5,7 @@
 <section class="row" id="profile">
     <div class="col-xs-12 profile-details">
         <div class="container">
-            <div class="col-xs-3 col-lg-3 col-md-3 col-sm-3">
-                <img class="profileImg" src="content/images/{{models.user.Img}}" />
-            </div>
+          
             <div class="col-xs-3 col-lg-3 col-md-3 col-sm-3 handyman-name border-left">
                 <h3 class="text-right">{{models.user.FullName}}</h3>
             </div>
@@ -15,15 +13,18 @@
     </div>
     <div class="col-xs-12">
         <div class="container">
-            <div class="col-xs-3">
+            <div class="col-xs-2">
+         
+                    <img class="profileImg" src="content/images/{{models.user.Img}}" />
+
                 <ul class="nav nav-tabs tabs-right">
-                    <li class="active"><a ng-click="$parent.showTab('#home-p')" data-toggle="tab">פרטים אישיים</a></li>
-                    <li><a ng-click="$parent.showTab('#login-p')" data-toggle="tab">פרטי התחברות</a></li>
-                    <li><a ng-click="$parent.showTab('#orders-p')" data-toggle="tab">ההזמנות שלי</a></li>
-                    <li><a ng-click="$parent.showTab('#comments-p')" data-toggle="tab">חוות דעת</a></li>
+                    <li class="active"><a class="btn text-right" ng-click="$parent.showTab('#home-p')" data-toggle="tab">פרטים אישיים</a></li>
+                    <li><a class="btn text-right" ng-click="$parent.showTab('#login-p')" data-toggle="tab">פרטי התחברות</a></li>
+                    <li><a class="btn text-right" ng-click="$parent.showTab('#orders-p')" data-toggle="tab">ההזמנות שלי</a></li>
+                    <li><a class="btn text-right" ng-click="$parent.showTab('#comments-p')" data-toggle="tab">חוות דעת</a></li>
                 </ul>
             </div>
-            <div class="col-xs-9">
+            <div class="col-xs-9 float-left">
                 <div class="tab-content">
                     <div class="tab-pane active" id="home-p">
                         <form role="form">
@@ -48,23 +49,31 @@
                                     <input id="dob" type="date" class="form-control" ng-model="models.user.Birthday">
                                     <label for="dob">תאריך לידה</label>
                                 </div>
-                                <div class="row form-group">
-                                    <label for="gender">מגדר</label>
-                                    <div class="btn-group" role="group" aria-label="gender">
-                                        <button type="button" class="btn btn-default" ng-class="{'active':models.user.Gender == 'M'}" ng-click="models.user.Gender = 'M'">זכר</button>
-                                        <button type="button" class="btn btn-default" ng-class="{'active':models.user.Gender == 'F'}" ng-click="models.user.Gender = 'F'">נקבה</button>
+                                <div class="col-xs-6">
+                                    <div class="row form-group">
+                                        <label for="gender">מגדר</label>
+                                        <div class="btn-group" role="group" aria-label="gender">
+                                            <button type="button" class="btn btn-default" ng-class="{'active':models.user.Gender == 'M'}" ng-click="models.user.Gender = 'M'">זכר</button>
+                                            <button type="button" class="btn btn-default" ng-class="{'active':models.user.Gender == 'F'}" ng-click="models.user.Gender = 'F'">נקבה</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row form-group">
-                                    <label for="gender">מגדר</label>
-                                    <div class="btn-group" role="group" aria-label="gender">
-                                        <button type="button" class="btn btn-default" ng-class="{'active':models.user.FamilyStatus == 'S'}" ng-click="models.user.FamilyStatus = 'S'">רווק/ה</button>
-                                        <button type="button" class="btn btn-default" ng-class="{'active':models.user.FamilyStatus == 'M'}" ng-click="models.user.FamilyStatus = 'M'">נשוי/ה</button>
-                                        <button type="button" class="btn btn-default" ng-class="{'active':models.user.FamilyStatus == 'D'}" ng-click="models.user.FamilyStatus = 'D'">גרוש/ה</button>
-                                        <button type="button" class="btn btn-default" ng-class="{'active':models.user.FamilyStatus == 'W'}" ng-click="models.user.FamilyStatus = 'W'">אלמן/ה</button>
+                                <div class="col-xs-6">
+                                    <div class="row form-group">
+                                        <label for="gender">מצב משפחתי</label>
+                                        <div class="btn-group" role="group" aria-label="gender">
+                                            <button type="button" class="btn btn-default" ng-class="{'active':models.user.FamilyStatus == 'S'}" ng-click="models.user.FamilyStatus = 'S'">רווק/ה</button>
+                                            <button type="button" class="btn btn-default" ng-class="{'active':models.user.FamilyStatus == 'M'}" ng-click="models.user.FamilyStatus = 'M'">נשוי/ה</button>
+                                            <button type="button" class="btn btn-default" ng-class="{'active':models.user.FamilyStatus == 'D'}" ng-click="models.user.FamilyStatus = 'D'">גרוש/ה</button>
+                                            <button type="button" class="btn btn-default" ng-class="{'active':models.user.FamilyStatus == 'W'}" ng-click="models.user.FamilyStatus = 'W'">אלמן/ה</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-xs-2 float-left text-left">
+                                <button type="submit" class="btn save" role="button">שמור</button>
+                            </div>
+                       
                         </form>
                     </div>
                     <div class="tab-pane" id="login-p">

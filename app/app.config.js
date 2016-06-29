@@ -89,7 +89,7 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             url: '/user/:id',
             controller: 'profileController',
             templateUrl: '/app/views/website/profile/user.html',
-            css: '/app/views/website/profile/profile.css'
+            css:'/app/views/website/profile/user.css'
         })
 
     $logProvider.debugEnabled(true);
