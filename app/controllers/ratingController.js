@@ -13,16 +13,18 @@ avBait.controller('ratingController', function ($rootScope, $scope, $stateParams
     }
 
     $scope.init = function () {
-        debugger;
         if ($stateParams.slug) {
             Server.post('getBusinessForCategory', { slug: $scope.models.slug })
             .success(function (res) {
-                debugger;
                 if (JSON.parse(res.d).state == 1) {
                     $scope.models.businessList = JSON.parse(res.d).businessList;
+                    for (var i = 0; i < $scope.models.businessList.length; i++) {
+                        $scope.models.businessList[i].showNumber = false;
+                    }
                 }
             })
-            .error(function (res) { })
+            .error(function (res) {
+            })
         }
     }
 

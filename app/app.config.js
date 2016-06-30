@@ -22,13 +22,13 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             templateUrl: '/app/views/website/process/main.html'
         })
         .state('website.home.subCategories', {
-            url: '/קטגוריה/:slug',
+            url: '/:slug/בחירת-תת-קטגוריה',
             controller: 'categoryController',
             templateUrl: '/app/views/website/process/sub-category.html',
             css: '/app/views/website/process/sub-category.css'
         })
         .state('website.home.choose', {
-            url: '/קטגוריה/:slug/בחירת-מסלול',
+            url: '/:slug/בחירת-מסלול',
             controller: function ($rootScope, $scope, $stateParams) {
                 $rootScope.steps = {
                     firstStep: false,
@@ -44,7 +44,7 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             css: '/app/views/website/process/process-choose.css'
         })
         .state('website.home.order-120', {
-            url: '/קטגוריה/:slug/תוך-120-דקות',
+            url: '/:slug/תוך-120-דקות',
             templateUrl: '/app/views/website/process/order-120.html',
             controller:function ($scope) { 
                 $scope.text = '120 דקות ובעל מקצוע אצלך';
@@ -52,25 +52,17 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             data: { pageTitle: 'הזמנת בעל מקצוע תוך 120 דקות' }
         })
         .state('website.home.rating', {
-            url: '/קטגוריה/:slug/דירוגים',
+            url: '/:slug/דירוגים',
             controller:'ratingController',
             templateUrl: '/app/views/website/process/process-rating.html',
             css: '/app/views/website/process/process-rating.css'
         })
         .state('website.home.ratingOrder', {
-            url: '/קטגוריה/:slug/דירוגים/הזמנה',
+            //url: '/קטגוריה/:slug/דירוגים/הזמנה',
+            url:'/:slug/הזמנה',
             controller: function ($scope) {
                 $scope.text = 'מאות דירוגים וחוות דעת';
             },
-            //controller: function ($scope) {
-            //    $scope.getStars = function (rating) {
-            //        // Get the value
-            //        var val = parseFloat(rating);
-            //        // Turn value into number/100
-            //        var size = val / 5 * 100;
-            //        return size + '%';
-            //    }
-            //},
             templateUrl: '/app/views/website/process/process-rating-order.html'
         })
         .state('website.page', {
@@ -127,10 +119,10 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
 
     $logProvider.debugEnabled(true);
 
-    $locationProvider.html5Mode({
-        enabled: true,
-        requireBase: false
-    });
+    //$locationProvider.html5Mode({
+    //    enabled: true,
+    //    requireBase: false
+    //});
 
 
     //.state('website.home.slug', {

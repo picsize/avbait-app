@@ -44,7 +44,7 @@ public class api : System.Web.Services.WebService
     {
         Dictionary<string, object> res = new Dictionary<string, object>();
         res.Add("state", 0);
-        res.Add("error", ex);
+        res.Add("error", ex.Message);
         return convertToJson(res);
     }
 

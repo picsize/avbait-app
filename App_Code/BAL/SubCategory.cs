@@ -14,10 +14,10 @@ public class SubCategory : Category
 
     public int ParentId { get; private set; }
     public decimal Price { get; private set; }
-    public int Id { get; private set; }
-    public string Name { get; private set; }
+    public new int Id { get; private set; }
+    public new string Name { get; private set; }
     public string Title { get; private set; }
-    public string Slug { get; private set; }
+    public new string Slug { get; private set; }
 
     #endregion
 

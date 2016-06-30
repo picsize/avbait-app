@@ -1,13 +1,11 @@
 ﻿
 <section class="row" id="sub-category">
     <section class="row rating-sub-category" id="rating-sub-category">
-
         <div class="row title">
             <div class="container">
                 <div class="col-xs-3 col-lg-3 col-md-3 col-sm-3">
                     <img src="/content/images/category/plumbers.png" />
                     <h1 class="font-bold color-blue">אינסטלציה</h1>
-
                 </div>
                 <div class="col-xs-4 col-lg-4 col-md-4 col-sm-4 text-center">
                     <h2 class="text-right sub-title">בעלי מקצוע עם הדירוג הכי גבוה</h2>
@@ -16,34 +14,27 @@
                     <location-search></location-search>
                 </div>
             </div>
-
-
         </div>
         <div class="container">
             <div class="row">
-            
-
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 results">
-
-
-
-                    <div class="member col-xs-12" data-category="פתיחת סתימה באסלה,פתיחת סתימה בכיור,נזילה בשירותים" data-location="תל אביב,נתניה" data-price-1="200" data-price-2="180" data-price-5="450">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 results" ng-repeat="business in models.businessList track by $index">
+                    <div class="member col-xs-12" data-category="פתיחת סתימה באסלה,פתיחת סתימה בכיור,נזילה בשירותים" data-location="{{business.Address}}">
                         <div class="thumbnail center-block text-center">
                             <div class="col-xs-1">
-                                <p class="color-blue place text-center">מקום ראשון</p>
+                                <p class="color-blue place text-center">מקום {{$index+1}}</p>
                             </div>
                             <div class="col-xs-4 img-name">
-                                <img class="float-right" src="content/images/defaultImg.png" alt="...">
-                                <h3 class="text-right">ענבר עיצוב ואדריכלות</h3>
+                                <img class="float-right" src="content/images/{{business.Image}}" alt="{{business.BusinessName}}">
+                                <h3 class="text-right"><a ui-sref="website.business({slug:business.Slug})">{{business.BusinessName}}</a></h3>
                             </div>
                             <div class="col-xs-2">
                                 <div class="rating">
                                     <label>דירוג</label>
                                     <h3 class="content-rating">
-                                        8.5
+                                        {{business.Rating}}
                                     </h3>
                                     <span class="stars">
-                                        <span class="float-left" ng-style="{ 'width': getStars(8.5/2) }"></span>
+                                        <span class="float-left" ng-style="{ 'width': getStars(business.Rating*1/2) }"></span>
                                     </span>
                                 </div>
                             </div>
@@ -51,125 +42,27 @@
                                 <label>
                                     זמינות
                                 </label>
-                                <img src="/content/images/check.png" />
+                                <img src="/content/images/check.png" ng-show="business.IsAvaliable" />
                             </div>
                             <div class="col-xs-1 price-vendor">
                                 <label>
                                     מחיר
                                 </label>
-
-                                <h3 class="content-rating">150₪</h3>
+                                <h3 class="content-rating">{{business.Price | currency : '₪'}}</h3>
                             </div>
                             <div class="col-xs-2 phone">
                                 <label>טלפון</label>
-                                <img src="/content/images/phoneicon.png" />
+                                <img src="/content/images/phoneicon.png" ng-click="business.showNumber = true" ng-show="!business.showNumber" />
+                                <h3 class="content-rating" ng-show="business.showNumber">{{business.MobileNumber}}</h3>
                             </div>
 
                             <div class="col-xs-1 float-left vertical-btn">
-
-                                <a ui-sref="website.home.ratingOrder" role="button">הזמנה</a>
-
-
+                                <a ui-sref="website.home.ratingOrder({slug:business.Slug})" role="button">הזמנה</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--<div class="container">
-        <div class="row title">
-            <div class="col-xs-3 col-lg-3 col-md-3 col-sm-3">
-                <h1 class="font-bold color-blue">{{models.selectedCategory}}</h1>
-            </div>
-            <div class="col-xs-4 col-lg-4 col-md-4 col-sm-4 text-center">
-                <h2 class="font-bold text-right color-light-gray sub-title">מה התקלה</h2>
-            </div>
-
-        </div>
-
-        <div class="row center-block text-center problem-types">
-            <div class="col-xs-12 col-lg-15 col-sm-15 col-md-15 text-container"
-                 ng-repeat="category in models.subCategoriesByTitle track by $index">
-                <h3>{{category.Title}}</h3>
-                <div class="text-right text-content short-text short-text">
-                    <a ng-click="openPopup(sub.Name,sub.Price, sub.Id)" ng-repeat="sub in models.subCategoriesByTitle[$index].SubCategory">{{sub.Name}}</a>
-                </div>
-            </div>
-        </div>
-    </div>-->
 </section>
-
-
-
-
-
-
-
-<script>
-    $(".show-more a").each(function () {
-        var $link = $(this);
-        var $content = $link.parent().prev("div.text-content");
-
-        //console.log($link);
-
-        var visibleHeight = $content[0].clientHeight;
-        var actualHide = $content[0].scrollHeight - 1;
-
-        console.log(actualHide);
-        console.log(visibleHeight);
-
-        if (actualHide > visibleHeight) {
-            $link.show();
-        } else {
-            $link.hide();
-        }
-    });
-
-    $(".show-more a").on("click", function () {
-        var $link = $(this);
-        var $content = $link.parent().prev("div.text-content");
-        var linkText = $link.text();
-
-        $content.toggleClass("short-text, full-text");
-
-        $link.text(getShowLinkText(linkText));
-
-        return false;
-    });
-
-    function getShowLinkText(currentText) {
-        var newText = '';
-
-        if (currentText.toUpperCase() === "הצג פחות") {
-            newText = "הצג עוד";
-        } else {
-            newText = "הצג פחות";
-        }
-
-        return newText;
-    }
-
-    $(document).on('click', '[data-target="#popup"]', function () {
-        $('.display-price h3:last-child').text($(this).attr('data-price'));
-        $('.display-price h3:first-child').text($(this).text());
-    });
-
-</script>
-
-
-

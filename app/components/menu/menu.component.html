@@ -12,7 +12,7 @@
             <button type="button" class="signInBTN" ng-click="register()" data-target="#register" ng-show="!models.showWelcome">הרשמה</button>
             <button type="button" class="join" ng-show="!models.showWelcome" ng-click="navigate('website.contactUs')">בעל מקצוע הצטרף אלינו</button>
             <span class="color-white" ng-show="models.showWelcome" ng-click="navigate('website.user', {id:models.user.Id})">שלום {{models.user.FullName}} | פרופיל</span>
-            <button type="button" class="btn btn-danger" ng-show="models.showWelcome" ng-click="logout()">התנתק</button>
+            <button type="button" class="join" ng-show="models.showWelcome" ng-click="logout()">התנתק</button>
         </div>
     </div>
     <div class="row">

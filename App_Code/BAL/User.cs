@@ -21,7 +21,7 @@ public class User
     public char Gender { get; private set; }
     public string HomeNumber { get; private set; }
     public int Id { get; private set; }
-    public string Img { get; private set; }
+    public string Image { get; private set; }
     public bool IsActive { get; private set; }
     public string MobileNumber { get; private set; }
     public string Password { get; private set; }
@@ -53,7 +53,7 @@ public class User
         Address = address;
         FamilyStatus = familyStatus;
         Birthday = birthday;
-        Img = image;
+        Image = image;
     }
 
     public User(int id, string email, string password, bool isActive, int userType, string fullName, string mobileNumber,
@@ -70,7 +70,22 @@ public class User
         GenderString = genderString;
         Address = address;
         FamilyStatusString = familyStatusString;
-        Img = image;
+        Image = image;
+    }
+
+    public User(string email, string password, int userType, string fullName, string mobileNumber, string homeNumber, char familyStatus, char gender, string address, DateTime birthday, string image)
+    {
+        Email = email;
+        Password = password;
+        UserType = userType;
+        FullName = fullName;
+        MobileNumber = mobileNumber;
+        HomeNumber = homeNumber;
+        FamilyStatus = familyStatus;
+        Gender = gender;
+        Address = address;
+        Birthday = birthday;
+        Image = image;
     }
 
     //register user
