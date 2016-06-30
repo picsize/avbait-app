@@ -1,77 +1,93 @@
 ﻿
-body {
+body
+{
     overflow-x: hidden;
 }
 
-a:hover {
+a:hover
+{
     cursor: pointer;
 }
 
-.main-holder {
+.main-holder
+{
     position: relative;
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.big-banner {
+.big-banner
+{
     background-image: url('/content/images/MainHederImg3.png');
 }
 
-.small-banner {
+.small-banner
+{
     background-image: url('/content/images/smalltal.jpg');
 }
 
 .modal-header
 {
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
 }
 
-.modal-content {
+.modal-content
+{
     margin-top: 13rem;
     background: url('/content/images/blueprint.jpg') no-repeat;
     background-size: cover;
     background-color: none;
 }
 
-.float-left {
+.float-left
+{
     float: left;
 }
 
-.float-right {
+.float-right
+{
     float: right;
 }
 
-.container-80 {
+.container-80
+{
     width: 80%;
     margin: 0 auto;
 }
 
-.color-light-gray {
+.color-light-gray
+{
     color: #c2c8cf;
 }
 
-.color-gray {
+.color-gray
+{
     color: #132c45;
 }
 
-.color-white {
+.color-white
+{
     color: #fff;
 }
 
-.color-blue {
+.color-blue
+{
     color: #1f3953;
 }
 
-.color-light-blue {
+.color-light-blue
+{
     color: #9DAAC7;
 }
 
-.color-orange {
+.color-orange
+{
     color: #f37321;
 }
 
-.center-block {
+.center-block
+{
     float: none;
 }
 
@@ -79,40 +95,49 @@ a:hover {
     font-size: 1.5rem;
 }*/
 
-section:not(.no-bg) {
+section:not(.no-bg)
+{
     background-color: #fff;
 }
 
-.no-left-padding {
+.no-left-padding
+{
     padding-left: 0;
 }
 
-.no-right-padding {
+.no-right-padding
+{
     padding-right: 0;
 }
 
-h1 {
+h1
+{
     font-size: 25px;
 }
 
-h2 {
+h2
+{
     font-size: 20px;
 }
 
-h3 {
+h3
+{
     font-size: 18px;
 }
 
-p {
+p
+{
     font-size: 14px;
 }
 
-.small, small {
+.small, small
+{
     font-size: 90%;
 }
 
 
-.form-control {
+.form-control
+{
     display: block;
     width: 100%;
     height: 34px;
@@ -132,33 +157,37 @@ p {
     border-radius: 0;
 }
 
-    .form-control:focus {
+    .form-control:focus
+    {
         border-color: transparent;
         outline: 0;
         box-shadow: none;
         border-bottom: 1px solid #bdbdbd;
     }
 
-.required:after {
+.required:after
+{
     content: '*';
     display: inline-block;
     color: #f00;
     margin-right: 0.5rem;
 }
 
-.placeholder-label label {
+.placeholder-label label
+{
     position: relative;
     bottom: 2.5rem;
-    color:#254460;
+    color: #254460;
     font-size: 1.4rem !important;
     -moz-transition: all ease-in 0.2s;
     -o-transition: all ease-in 0.2s;
     -webkit-transition: all ease-in 0.2s;
     transition: all ease-in 0.2s;
-    font-weight:normal;
+    font-weight: normal;
 }
 
-.placeholder-label input, .placeholder-label textarea {
+.placeholder-label input, .placeholder-label textarea
+{
     margin-top: 0;
     -moz-transition: all ease-in 0.2s;
     -o-transition: all ease-in 0.2s;
@@ -166,18 +195,20 @@ p {
     transition: all ease-in 0.2s;
 }
 
-.placeholder-label input:focus + label, .placeholder-label textarea:focus + label {
-    bottom: 5rem;
-    opacity:1 !important;
-    color: #91bdf5;
-    font-size:1.3rem !important;
-    -moz-transition: all ease-in 0.2s;
-    -o-transition: all ease-in 0.2s;
-    -webkit-transition: all ease-in 0.2s;
-    transition: all ease-in 0.2s;
-}
+    .placeholder-label input:focus + label, .placeholder-label textarea:focus + label
+    {
+        bottom: 5rem;
+        opacity: 1 !important;
+        color: #91bdf5;
+        font-size: 1.3rem !important;
+        -moz-transition: all ease-in 0.2s;
+        -o-transition: all ease-in 0.2s;
+        -webkit-transition: all ease-in 0.2s;
+        transition: all ease-in 0.2s;
+    }
 
-    .placeholder-label textarea:focus + label {
+    .placeholder-label textarea:focus + label
+    {
         bottom: 7.5rem;
         -moz-transition: all ease-in 0.3s;
         -o-transition: all ease-in 0.3s;
@@ -185,42 +216,48 @@ p {
         transition: all ease-in 0.3s;
     }
 
-    .placeholder-label input.has-text + label, .placeholder-label textarea.has-text + label {
-        opacity:0;
+    .placeholder-label input.has-text + label, .placeholder-label textarea.has-text + label
+    {
+        opacity: 0;
         -moz-transition: all ease-in 0.2s;
         -o-transition: all ease-in 0.2s;
         -webkit-transition: all ease-in 0.2s;
         transition: all ease-in 0.2s;
     }
 
-.placeholder-label input:focus, .placeholder-label textarea:focus {
-    -moz-transition: all ease-in 0.2s;
-    -o-transition: all ease-in 0.2s;
-    -webkit-transition: all ease-in 0.2s;
-    transition: all ease-in 0.2s;
-    color:#254460;
-}
+    .placeholder-label input:focus, .placeholder-label textarea:focus
+    {
+        -moz-transition: all ease-in 0.2s;
+        -o-transition: all ease-in 0.2s;
+        -webkit-transition: all ease-in 0.2s;
+        transition: all ease-in 0.2s;
+        color: #254460;
+    }
 
-span.stars, span.stars span {
+span.stars, span.stars span
+{
     display: block;
-   /* Download the star image here: http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css */
+    /* Download the star image here: http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css */
     background: url('https://apppresser.com/wp-content/uploads/2015/11/stars.png') 16px -16px repeat-x;
     width: 80px;
     height: 16px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-span.stars span {
-    background-position: 0 0;
-}
+    span.stars span
+    {
+        background-position: 0 0;
+    }
 
 
-.ellip {
+.ellip
+{
     display: block;
     height: 100%;
 }
 
-.ellip-line {
+.ellip-line
+{
     display: inline-block;
     -ms-text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
@@ -232,7 +269,8 @@ span.stars span {
 }
 
 .ellip,
-.ellip-line {
+.ellip-line
+{
     position: relative;
     overflow: hidden;
 }
@@ -241,36 +279,62 @@ span.stars span {
 .col-xs-15,
 .col-sm-15,
 .col-md-15,
-.col-lg-15 {
+.col-lg-15
+{
     position: relative;
     min-height: 1px;
     padding-right: 10px;
     padding-left: 10px;
 }
 
-.col-xs-15 {
+.col-xs-15
+{
     width: 20%;
     float: right;
 }
 
-@media (min-width: 768px) {
-    .col-sm-15 {
+@media (min-width: 768px)
+{
+    .col-sm-15
+    {
         width: 20%;
         float: right;
     }
 }
 
-@media (min-width: 992px) {
-    .col-md-15 {
+@media (min-width: 992px)
+{
+    .col-md-15
+    {
         width: 20%;
         float: right;
     }
 }
 
-@media (min-width: 1200px) {
-    .col-lg-15 {
+@media (min-width: 1200px)
+{
+    .col-lg-15
+    {
         width: 20%;
         float: right;
     }
 }
 
+
+footer
+{
+    background-color: #707070 !important;
+    height: 5.5rem;
+    padding: 0.5rem;
+}
+
+    footer img
+    {
+        width: 12rem;
+        
+    }
+
+    footer p
+    {
+        margin-top:1.5rem;
+    }
