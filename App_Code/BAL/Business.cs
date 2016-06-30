@@ -37,4 +37,9 @@ public class Business : User
          wednesdayStart, wednesdayEnd, thursdayStart, thursdayEnd, fridayStart, fridayEnd,
          saturdayStart, saturdayEnd);
     }
+
+    internal List<Business> getBusinessForCategory(string slug)
+    {
+        return _db.getBusinessForCategory(slug);
+    }
 }

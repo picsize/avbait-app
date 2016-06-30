@@ -29,12 +29,16 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
         })
         .state('website.home.choose', {
             url: '/קטגוריה/:slug/בחירת-מסלול',
-            controller: function ($rootScope) {
+            controller: function ($rootScope, $scope, $stateParams) {
                 $rootScope.steps = {
                     firstStep: false,
                     secondStep: true,
                     lastStep: false
                 };
+
+                $scope.models = {
+                    slug:$stateParams.slug
+                }
             },
             templateUrl: '/app/views/website/process/process-choose.html',
             css: '/app/views/website/process/process-choose.css'
@@ -42,21 +46,32 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
         .state('website.home.order-120', {
             url: '/קטגוריה/:slug/תוך-120-דקות',
             templateUrl: '/app/views/website/process/order-120.html',
+            controller:function ($scope) { 
+                $scope.text = '120 דקות ובעל מקצוע אצלך';
+            },
             data: { pageTitle: 'הזמנת בעל מקצוע תוך 120 דקות' }
         })
         .state('website.home.rating', {
             url: '/קטגוריה/:slug/דירוגים',
-            controller: function ($scope) {
-                $scope.getStars = function (rating) {
-                    // Get the value
-                    var val = parseFloat(rating);
-                    // Turn value into number/100
-                    var size = val / 5 * 100;
-                    return size + '%';
-                }
-            },
+            controller:'ratingController',
             templateUrl: '/app/views/website/process/process-rating.html',
             css: '/app/views/website/process/process-rating.css'
+        })
+        .state('website.home.ratingOrder', {
+            url: '/קטגוריה/:slug/דירוגים/הזמנה',
+            controller: function ($scope) {
+                $scope.text = 'מאות דירוגים וחוות דעת';
+            },
+            //controller: function ($scope) {
+            //    $scope.getStars = function (rating) {
+            //        // Get the value
+            //        var val = parseFloat(rating);
+            //        // Turn value into number/100
+            //        var size = val / 5 * 100;
+            //        return size + '%';
+            //    }
+            //},
+            templateUrl: '/app/views/website/process/process-rating-order.html'
         })
         .state('website.page', {
             url: 'מאמרים/:slug',
@@ -112,10 +127,10 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
 
     $logProvider.debugEnabled(true);
 
-    //$locationProvider.html5Mode({
-    //    enabled: true,
-    //    requireBase: false
-    //});
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+    });
 
 
     //.state('website.home.slug', {
