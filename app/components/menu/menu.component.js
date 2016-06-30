@@ -30,6 +30,11 @@ avBait.component('websiteMenu', {
             }, 1000 * 0.5);
         }
 
+        $scope.logout = function () {
+            Cookie.remove('user');
+            location.reload();
+        }
+
         $scope.init();
     }
 });

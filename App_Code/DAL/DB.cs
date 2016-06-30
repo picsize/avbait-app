@@ -272,4 +272,15 @@ public class DB
         return pages[0];
     }
 
+    internal List<Business> getBusinessForCategory(string slug)
+    {
+        SqlConnection con = Connect();
+        string commandText = string.Format("select * from dbo.getBusinessForCategory(N'{0}') order by Rating", slug);
+        SqlCommand cmd = CreateCommand(commandText, con);
+        DataTable dt = Select(cmd);
+        List<Business> businessList = ConvertDataTable<Business>(dt);
+
+        return businessList;
+    }
+
 }

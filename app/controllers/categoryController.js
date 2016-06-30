@@ -51,7 +51,7 @@ avBait.controller('categoryController', function ($rootScope, $scope, $statePara
         //if (models) {
 
         //}
-        View.show('website.home.choose');
+        View.show('website.home.choose', {slug:sub.Slug});
         //ui-sref="website.home.choose"
     }
 

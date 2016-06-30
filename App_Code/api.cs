@@ -302,4 +302,27 @@ public class api : System.Web.Services.WebService
         }
     }
 
+    [WebMethod]
+    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+    public string getBusinessForCategory(string slug)
+    {
+        try
+        {
+            List<Business> businessList = _business.getBusinessForCategory(slug);
+            Dictionary<string, object> res = new Dictionary<string, object>();
+            if (businessList != null)
+            {
+                res.Add("state", 1);
+                res.Add("businessList", businessList);
+            }
+            else res.Add("state", 0);
+
+            return convertToJson(res);
+        }
+        catch (Exception ex)
+        {
+            return createExceptionJson(ex);
+        }
+    }
+
 }
