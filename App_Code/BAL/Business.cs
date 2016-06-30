@@ -94,6 +94,7 @@ public class Business : User
 
     internal List<Business> getBusinessForCategory(string slug)
     {
-        return _db.getBusinessForCategory(slug);
+        List<Business> businessList = _db.getBusinessForCategory(slug);
+        return businessList;
     }
 }

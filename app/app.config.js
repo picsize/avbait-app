@@ -119,10 +119,10 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
 
     $logProvider.debugEnabled(true);
 
-    //$locationProvider.html5Mode({
-    //    enabled: true,
-    //    requireBase: false
-    //});
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+    });
 
 
     //.state('website.home.slug', {
