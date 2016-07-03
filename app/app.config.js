@@ -19,15 +19,15 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             url: '/',
             controller: 'mainController',
             css: '/app/views/website/process/category.css',
-            templateUrl: '/app/views/website/process/main.html'
+            templateUrl: '/app/views/website/process/category.html'
         })
-        .state('website.home.subCategories', {
+        .state('website.subCategories', {
             url: '/:slug/בחירת-תת-קטגוריה',
             controller: 'categoryController',
             templateUrl: '/app/views/website/process/sub-category.html',
             css: '/app/views/website/process/sub-category.css'
         })
-        .state('website.home.choose', {
+        .state('website.choose', {
             url: '/:slug/בחירת-מסלול',
             controller: function ($rootScope, $scope, $stateParams) {
                 $rootScope.steps = {
@@ -43,7 +43,7 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             templateUrl: '/app/views/website/process/process-choose.html',
             css: '/app/views/website/process/process-choose.css'
         })
-        .state('website.home.order-120', {
+        .state('website.process.order-120', {
             url: '/:slug/תוך-120-דקות',
             templateUrl: '/app/views/website/process/order-120.html',
             controller:function ($scope) { 
@@ -51,13 +51,13 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             },
             data: { pageTitle: 'הזמנת בעל מקצוע תוך 120 דקות' }
         })
-        .state('website.home.rating', {
+        .state('website.rating', {
             url: '/:slug/דירוגים',
             controller:'ratingController',
             templateUrl: '/app/views/website/process/process-rating.html',
             css: '/app/views/website/process/process-rating.css'
         })
-        .state('website.home.ratingOrder', {
+        .state('website.ratingOrder', {
             //url: '/קטגוריה/:slug/דירוגים/הזמנה',
             url:'/:slug/הזמנה',
             controller: function ($scope) {
@@ -119,10 +119,10 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
 
     $logProvider.debugEnabled(true);
 
-    $locationProvider.html5Mode({
-        enabled: true,
-        requireBase: false
-    });
+    //$locationProvider.html5Mode({
+    //    enabled: true,
+    //    requireBase: true
+    //});
 
 
     //.state('website.home.slug', {
