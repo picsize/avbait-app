@@ -1,73 +1,86 @@
-﻿.main-img {
+﻿.main-img
+{
     height: 50rem;
 }
 
-    .main-img h1 {
+    .main-img h1
+    {
         font-size: 3.7rem;
-        margin-top: -2rem;
+        margin-top: 1rem;
         line-height: 87px;
+        margin-right: 5rem;
     }
 
-    .main-img .features {
+    .main-img .features
+    {
         margin-top: 4rem;
         padding: 0;
     }
 
-        .main-img .features li {
+        .main-img .features li
+        {
             display: inline-block;
             padding: 1rem 6rem;
         }
 
-            .main-img .features li:first-child {
+            .main-img .features li:first-child
+            {
                 padding: 1rem 0 1rem 6rem;
             }
 
-            .main-img .features li a {
+            .main-img .features li a
+            {
                 color: #fff;
+                text-decoration: none;
             }
 
-            .main-img .features li:not(:last-child) {
+            .main-img .features li:not(:last-child)
+            {
                 border-left: 1px solid #fff;
                 height: 8rem;
             }
 
-            .main-img .features li img {
+            .main-img .features li img
+            {
                 margin-bottom: 3rem;
+                width: 6rem;
             }
 
 .features p
 {
-    font-size:16px;
-    color:#000;
+    font-size: 16px;
+    color: #000;
 }
 
 
 
 .steps-row
 {
-                margin-top: 11.8rem;
+    margin-top: 10.5rem !important;
 }
 
-#process {
+#process
+{
     overflow: hidden;
     /*CSS counters to number the steps*/
     counter-reset: step;
-
 }
 
-    #process li {
-    list-style-type: none;
-    color: #000;
-    text-transform: uppercase;
-    font-size: 15px;
-    width: 33.33%;
-    float: right;
-    position: relative;
-    text-align: right;
-    font-weight: bold;
+    #process li
+    {
+        list-style-type: none;
+        color: #000;
+        text-transform: uppercase;
+        font-size: 15px;
+        width: 33.33%;
+        float: right;
+        position: relative;
+        text-align: right;
+        font-weight: bold;
     }
 
-        #process li:before {
+        #process li:before
+        {
             content: counter(step);
             counter-increment: step;
             line-height: 49px;
@@ -92,16 +105,30 @@
             text-align: center;
         }
 
-        #process li.active:before {
+        #process li.active:before
+        {
             color: #ff681f;
             background-color: #fff;
             border: 2px solid #ff681f;
         }
 
-        #process li small {
+        #process li small
+        {
             display: inline-block;
             text-indent: 11.8rem;
             position: relative;
             top: -1rem;
             font-weight: normal;
         }
+
+.services-row
+{
+    margin-top: 12.7rem !important;
+    padding: 1rem;
+    background-color: rgb(240, 239, 240);
+}
+
+    .services-row img
+    {
+        width:4rem;
+    }

@@ -1,16 +1,12 @@
 ﻿
-.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle {
-    background-color: #333;
+.navbar-toggle .icon-bar
+{
+    border:1px solid #fff;
 }
-
-.affix .navbar-inverse .navbar-toggle, .affix .navbar-inverse .navbar-toggle {
-    box-shadow: 0 0 8px #fff;
-}
-
 
 @media only screen and (max-width:320px) {
 
-    .main-holder {
+    /*.main-holder {
         background-attachment: scroll;
         background-size: cover;
     }
@@ -135,12 +131,12 @@
             background-size: 100% 100% !important;
             top: 0 !important;
             margin-top: 2rem;
-        }
+        }*/
 }
 
 @media only screen and (max-width:480px) {
 
-    .main-holder {
+    /*.main-holder {
         background-attachment: initial !important;
         background-size: inherit !important;
     }
@@ -280,12 +276,12 @@
             background-size: 100% 100% !important;
             top: 0 !important;
             margin-top: 2rem;
-        }
+        }*/
 }
 
 @media only screen and (max-width:640px) {
 
-    .main-holder {
+    /*.main-holder {
         background-attachment: initial !important;
         background-size: inherit !important;
     }
@@ -425,11 +421,11 @@
             background-size: 100% 100% !important;
             top: 0 !important;
             margin-top: 2rem;
-        }
+        }*/
 }
 
 @media only screen and (max-width:768px) {
-    .affix .container-80 {
+    /*.affix .container-80 {
         width: 100% !important;
         padding-right: 0 !important;
     }
@@ -439,7 +435,7 @@
     }
 
 
-    /*.main-holder {
+    .main-holder {
         background-attachment: initial !important;
         background-size: inherit !important;
         background-position: 35% 0 !important;
@@ -581,7 +577,7 @@
 }
 
 @media only screen and (max-width:1024px) {
-    .affix .container-80 {
+    /*.affix .container-80 {
         width: 100% !important;
         padding-right: 0 !important;
     }
@@ -591,7 +587,7 @@
     }
 
 
-    /*.main-holder {
+    .main-holder {
         background-attachment: initial !important;
         background-size: inherit !important;
         background-position: 35% 0 !important;
@@ -733,7 +729,7 @@
 }
 
 @media only screen and (max-width:1366px) {
-    .affix .container-80 {
+   /* .affix .container-80 {
         width: 100% !important;
         padding-right: 0 !important;
     }
@@ -773,7 +769,7 @@
             }
 
 
-    /*
+    
 
     .logo {
         width: 12rem !important;

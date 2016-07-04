@@ -3,13 +3,14 @@
 .logo
 {
     width: 15rem;
+    margin-top: -5rem;
 }
 
 
 .navbar
 {
     min-height: 40px;
-    margin-top: 2rem;
+    margin: 0;
 }
 
 
@@ -17,6 +18,13 @@
 #navbar a
 {
     color: #fff;
+}
+
+.nav > li > a
+{
+            padding: 15px 10px !important;
+    color: #fff;
+    z-index: 9;
 }
 
 .nav > li > a:focus, .nav > li > a:hover
@@ -32,6 +40,12 @@
 .white-opacity
 {
     background-color: rgba(255, 255, 255, 0.44);
+    margin:0;
+}
+
+.brown-opacity
+{
+    background-color:rgba(255, 194, 119, 0.5);
 }
 
 
@@ -55,8 +69,10 @@
 
 .login-buttons
 {
-    margin-top: 6rem;
+
+    margin-top: 2rem;
     padding: 0;
+    margin-bottom: 1rem;
 }
 
     .login-buttons button:not(:first-child)
@@ -72,7 +88,7 @@
     border: none;
     box-shadow: none;
     padding: 0;
-    width: 20%;
+       width: 29.5%;
     background: transparent;
     float: left;
 }
