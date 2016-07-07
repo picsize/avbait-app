@@ -1,6 +1,6 @@
 ﻿.main-img
 {
-    height: 50rem;
+    height: 51rem;
 }
 
     .main-img h1
@@ -123,12 +123,18 @@
 
 .services-row
 {
-    margin-top: 12.7rem !important;
-    padding: 1rem;
-    background-color: rgb(240, 239, 240);
+    margin-top: 0.7rem !important;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.49);
 }
 
     .services-row img
     {
         width:4rem;
+        margin-left:0.5rem;
+    }
+
+    .services-row p
+    {
+        margin:0;
     }
