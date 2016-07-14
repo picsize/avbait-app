@@ -2,8 +2,9 @@
 
 .logo
 {
-    width: 15rem;
+    width: 14rem;
     margin-top: -5rem;
+    padding: 1rem;
 }
 
 
@@ -17,20 +18,20 @@
 
 #navbar a
 {
-    color: #fff;
+    color: #000;
 }
 
 .nav > li > a
 {
-            padding: 15px 10px !important;
-    color: #fff;
+    padding: 15px 10px !important;
+    color: #000;
     z-index: 9;
 }
 
-.nav > li > a:focus, .nav > li > a:hover
-{
-    background-color: rgba(238, 238, 238, 0.28);
-}
+    .nav > li > a:focus, .nav > li > a:hover
+    {
+        background-color: rgba(238, 238, 238, 0.28);
+    }
 
 .black-opacity
 {
@@ -40,29 +41,29 @@
 .white-opacity
 {
     background-color: rgba(255, 255, 255, 0.44);
-    margin:0;
+    margin: 0;
 }
 
 .brown-opacity
 {
-    background-color:rgba(255, 194, 119, 0.5);
+    background-color: rgba(255, 194, 119, 0.5);
 }
 
 
 
-.signInBTN, .join
+.signInBTN
 {
     background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #f3753a;
+    color: #000;
     border-radius: 2px;
 }
 
 
-    .signInBTN:hover, .join:hover
+    .signInBTN:hover
     {
-        background: #fff;
-        color: #000;
+        background: #f3753a;
+        color: #fff;
     }
 
 
@@ -70,9 +71,8 @@
 .login-buttons
 {
 
-    margin-top: 2rem;
-    padding: 0;
-    margin-bottom: 1rem;
+    padding: 15px 10px 0 0 !important;
+    text-align:left;
 }
 
     .login-buttons button:not(:first-child)
@@ -88,7 +88,7 @@
     border: none;
     box-shadow: none;
     padding: 0;
-       width: 29.5%;
+    width: 9.5%;
     background: transparent;
     float: left;
 }
@@ -96,5 +96,34 @@
     .social button img
     {
         width: 100%;
-        padding: 1rem;
+        padding: 0.5rem;
     }
+
+
+.menuBg
+{
+    background-color: #fff;
+}
+
+.grayBG
+{
+    background-color: #f5f5f5;
+}
+
+.quickMenu
+{
+       position: relative;
+    right: 19rem;
+    top: 1rem;
+}
+
+    .quickMenu p
+    {
+        margin-left:0.5rem;
+    }
+
+.quickMenu img
+{
+    width:2rem;
+    margin-left:0.5rem;
+}

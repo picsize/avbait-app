@@ -1,21 +1,45 @@
-﻿<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12 text-left login-buttons">
-            <button type="button" class="signInBTN" ng-click="login()" data-target="#sign-in" ng-show="!models.showWelcome">התחברות</button>
-            <button type="button" class="signInBTN" ng-click="register()" data-target="#register" ng-show="!models.showWelcome">הרשמה</button>
-            <button type="button" class="join" ng-show="!models.showWelcome" ng-click="navigate('website.contactUs')">בעל מקצוע הצטרף אלינו</button>
-            <span class="color-white" ng-show="models.showWelcome" ng-click="navigate('website.user', {id:models.user.Id})">שלום {{models.user.FullName}} | פרופיל</span>
-            <button type="button" class="join" ng-show="models.showWelcome" ng-click="logout()">התנתק</button>
+﻿<div class="grayBG">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 quickMenu">
+                <div class="col-xs-3">
+                    <img class="float-right" src="/content/images/clockBlue.png" />
+                    <p class="float-right font-bold">
+                        אב הבית
+                    </p>
+                    <span class="float-right color-orange font-bold">אקספרס</span>
+                </div>
+                <div class="col-xs-3">
+                    <img class="float-right" src="/content/images/raringBlue.png" />
+                    <p class="float-right font-bold">
+                        אב הבית
+                    </p>
+                    <span class="float-right color-orange font-bold">דירוגים</span>
+                </div>
+                <div class="col-xs-3">
+                    <img class="float-right" src="/content/images/pricetag.png" />
+                    <p class="float-right font-bold">
+                        אב הבית
+                    </p>
+                    <span class="float-right color-orange font-bold">הצעות מחיר</span>
+                </div>
+            </div>
+            <div class="col-xs-4 col-lg-4 col-md-4 col-sm-4 text-left navbar social" id="navbar">
+                <button type="button"><img src="/content/images/facebook.png" /></button>
+                <button type="button"><img src="/content/images/google.png" /></button>
+                <button type="button"><img src="/content/images/youtube.png" /></button>
+            </div>
         </div>
     </div>
 </div>
 
+<div class="menuBg">
 
-<div class="container desktop-menu">
-    <div class="row">
+
+    <div class="container">
         <div class="col-xs-2 col-lg-2 col-md-2 col-sm-2">
             <a class="navbar-brand" href="/">
-                <img class="logo" src="content/images/logo.png" />
+                <img class="logo grayBG" src="content/images/logo.png" />
             </a>
         </div>
         <div class="navbar-header">
@@ -25,9 +49,10 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
-        <div id="main-menu" class="collapse navbar-collapse">
-            <div class="row ">
-                <div class="col-xs-8">
+        <div class="col-xs-10">
+            <div id="main-menu" class="collapse navbar-collapse">
+                <div class="row ">
+
                     <ul class="nav navbar-nav">
                         <li><a ui-sref="website.solution">הפתרון שלנו</a></li>
                         <li><a ui-sref="website.home.category">הזמן בעל מקצוע</a></li>
@@ -37,19 +62,18 @@
                         <li><a ui-sref="website.application">אפליקציית אב הבית</a></li>
                         <li><a ui-sref="website.contactUs">צור קשר</a></li>
                     </ul>
-                </div>
-                <div class="col-xs-2 social">
-                    <nav class="navbar" id="navbar">
-                        <button type="button"><img src="/content/images/facebook.png" /></button>
-                        <button type="button"><img src="/content/images/google.png" /></button>
-                        <button type="button"><img src="/content/images/youtube.png" /></button>
-                    </nav>
+
+                    <div class="col-xs-3 login-buttons float-left">
+                        <nav>
+                            <button type="button" class="signInBTN" ng-click="login()" data-target="#sign-in" ng-show="!models.showWelcome">התחברות</button>
+                            <button type="button" class="signInBTN" ng-click="register()" data-target="#register" ng-show="!models.showWelcome">הרשמה</button>
+                            <span class="color-white" ng-show="models.showWelcome" ng-click="navigate('website.user', {id:models.user.Id})">שלום {{models.user.FullName}} | פרופיל</span>
+                            <button type="button" class="join" ng-show="models.showWelcome" ng-click="logout()">התנתק</button>
+                        </nav>
+                    </div>
                 </div>
             </div>
-
         </div>
-
     </div>
 
 </div>
-
