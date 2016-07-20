@@ -70,9 +70,8 @@
 
 .login-buttons
 {
-
     padding: 15px 10px 0 0 !important;
-    text-align:left;
+    text-align: left;
 }
 
     .login-buttons button:not(:first-child)
@@ -81,16 +80,20 @@
     }
 
 
-
+.social
+{
+    padding:0;
+}
 
 .social button
 {
     border: none;
     box-shadow: none;
     padding: 0;
-    width: 9.5%;
+    width: 16.5%;
     background: transparent;
     float: left;
+    margin-top: 0.5rem;
 }
 
     .social button img
@@ -112,18 +115,27 @@
 
 .quickMenu
 {
-       position: relative;
-    right: 19rem;
-    top: 1rem;
+    margin-top:1.5rem;
 }
 
     .quickMenu p
     {
-        margin-left:0.5rem;
+        margin-left: 0.5rem;
     }
 
-.quickMenu img
+    .quickMenu img
+    {
+        width: 2.5rem;
+        margin-left: 0.5rem;
+    }
+
+.quicknav
 {
-    width:2rem;
-    margin-left:0.5rem;
+    padding:0;
+}
+
+.navbar-nav
+{
+    position: relative;
+    right: 19rem;
 }
