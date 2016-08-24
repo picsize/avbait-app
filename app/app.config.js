@@ -116,6 +116,20 @@ avBait.config(function ($locationProvider, $stateProvider, $urlRouterProvider, $
             templateUrl: '/app/views/website/packages/business.html',
             css: '/app/views/website/packages/business.css'
         })
+        .state('admin', {
+            abstract: true,
+            templateUrl: '/app/views/admin/index.html'
+        })
+        .state('admin.business', {
+            abstract: true,
+            templateUrl: '/app/views/admin/business/main.html',
+            controller: 'businessController'
+        })
+        .state('admin.business.add', {
+            url: '/admin/business/add',
+            templateUrl: '/app/views/admin/business/add.html',
+            //css: '/app/views/website/packages/business.css'
+        })
 
     $logProvider.debugEnabled(true);
 
